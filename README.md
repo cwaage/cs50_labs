@@ -10,18 +10,35 @@ Follow the 'TODO' prompts int the code's comments to accomplish the tasks listed
   - Print output using printf() with the %s string placeholder
 
 
-{% spoiler "Help for get_string() Try first without clicking" %}
+{% spoiler "Try first without peaking: Click for help with get_string()" %}
 Be sure to declare your variable as type string and assign it the value from the get_string input as below
 
-string variable_name = get_string("Bla bla bla);
+```
+string variable_name = get_string("Please enter your name: ");
+```
+
+{% endspoiler %}
+
+{% spoiler "Try first without peaking: Click for help with printf() with %s placeholder" %}
+Use
+
+```
+printf("Hello %s\n", name);
+```
 
 {% endspoiler %}
 
 #### Compile your program (Change your source code to machine code)
-When you are done with the changes listed above
-At the $ prompt type:
+When you are done with the changes listed above compile your program with the make command
 
-  make hello_again
+{% spoiler "Try it yourself without looking" %}
+At the $ prompt type as shown below:
+
+```
+  $ make hello_again
+```
+
+{% endspoiler %}
   
 {% next "Running Your Program" %}
 
@@ -44,10 +61,7 @@ Please enter your name: Chris Waage
 Hello Chris Waage
 
 {% check "Does your code compile?" %}
-{{ if compiles.passed }}
-Yes! Nicely done.
-{% else %}
-Looks like you have some errors to fix
+{{ compiles }}
 {% endcheck %}
 
 {% submit "Ready to submit?" %}
