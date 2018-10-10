@@ -1,7 +1,7 @@
 lab50: true
 
 lab50:
-  submit: cs50/labs/hello_again
+  submit: cs50/2018/ap/hello_again
   files:
     - !include hello_again.c
     - !exclude README.md
