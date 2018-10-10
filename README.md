@@ -42,3 +42,12 @@ Please enter your name: Chris Waage
 - You should see the following output on your terminal 
 
 Hello Chris Waage
+
+{% check "Does your code compile?" %}
+{{ if compiles.passed }}
+Yes! Nicely done.
+{% else %}
+Looks like you have some errors to fix
+{% endcheck %}
+
+{% submit "Ready to submit?" %}
