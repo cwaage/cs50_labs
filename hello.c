@@ -13,11 +13,9 @@
 
 int main(void)
 {
-  // Create a string variable called name
+  // TODO: Create a string variable called name
   // TODO: Get User's name with the get_string() function
   
-  // TODO: Change the printf() below
-  // Use the '%s' placeholder to output "Hello name" (where name is the value input by user).
-  // Be sure to include a new line character '\n'
+  // TODO: Change the printf() below to say hello "Hello 'name'" (where 'name'e is the value input by user).
   printf("hello, world");
 }
