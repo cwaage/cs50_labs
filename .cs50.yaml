@@ -1,3 +1,5 @@
+lab50: true
+
 lab50:
   files:
     - hello.c
