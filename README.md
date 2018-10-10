@@ -13,7 +13,7 @@ Follow the 'TODO' prompts int the code's comments to accomplish the tasks listed
 {% spoiler "Try first without peaking: Click for help with get_string()" %}
 Be sure to declare your variable as type string and assign it the value from the get_string input as below
 
-```
+```c
 string name = get_string("Please enter your name: ");
 ```
 
@@ -22,7 +22,7 @@ string name = get_string("Please enter your name: ");
 {% spoiler "Try first without peaking: Click for help with printf() with %s placeholder" %}
 Use
 
-```
+```c
 printf("Hello %s\n", name);
 ```
 
