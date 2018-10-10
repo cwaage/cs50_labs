@@ -2,5 +2,5 @@ lab50: true
 
 lab50:
   files:
-    - !include hello.c
+    - !include hello_again.c
     - !exclude README.md
