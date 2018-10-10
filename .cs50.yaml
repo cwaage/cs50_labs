@@ -2,6 +2,9 @@ lab50: true
 submit50: true
 
 lab50:
+  submit: cwaage/cs50_labs/cs50_functions/hello_again
+
+lab50:
   files:
     - !include hello_again.c
     - !exclude README.md
