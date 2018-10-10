@@ -4,3 +4,6 @@ lab50:
   files:
     - !include hello_again.c
     - !exclude README.md
+    
+lab50:
+  submit: cs50/labs/hello_again
