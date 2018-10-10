@@ -78,7 +78,7 @@ $ help50 make hello
 {% next "Running Your Program" %}
 
 #### Run Your Program
-When you code has compiled without errors there will be a new 'executable' file called
+When your code has compiled without errors there will be a new 'executable' file called
 
 **hello**
 
