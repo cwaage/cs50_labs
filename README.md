@@ -10,8 +10,9 @@ know what you think. - C Waage*
 Follow the 'TODO' prompts int the code's comments to accomplish the tasks listed below.
 
   - Add the cs50 library in as an include
-  - Get User Input with the get_string() function
-  - Print output using printf() with the %s string placeholder
+  - Create a string variable called `name`
+  - Get User Input with the `get_string()` function
+  - Print output using `printf()` with the `%s` string placeholder
 
 See how far you can get on your own. But if you forget some keywords or syntax, or it's simply just not working ...
 don't hit your head against a wall. Click on the hints listed below and help will be revealed. 
@@ -45,7 +46,9 @@ printf("Hello %s\n", name);
 
 {% endspoiler %}
 
-#### Compile your program (Change your source code to machine code)
+{% next "Compile" %}
+
+#### Compile your program
 When you are done with the changes listed above `compile` your program with the `make` command.
 
 {% spoiler "Hint for compile" %}
@@ -110,3 +113,18 @@ You can submit your project directly from the command line as shown below.
 ```
 submit50 cs50/2018/fall/hello
 ```
+
+You will be prompted for your github credentials (user name/password) and at the end of the process may see a message like the following:
+
+```csh
+Files that will be submitted:
+./hello.c
+Files that won't be submitted:
+./.bash_history
+./hello
+Keeping in mind the course's policy on academic honesty, are you sure you want to submit these files (yes/no)?
+```
+
+Type 'yes' and you are done!
+
+Congrats, you just finished our first Coding lab. 
