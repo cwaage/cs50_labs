@@ -1,7 +1,7 @@
 # cs50_labs
 
-### Hello Again 
-## Adding Interactive Features To Your Program 
+## Hello Again 
+### Adding Interactive Features To Your Program 
 
 Complete the Following Program By Doing the Following:
 
@@ -9,3 +9,16 @@ Complete the Following Program By Doing the Following:
   - Get User Input with the get_string() function
   - Print output using printf() with the %s string placeholder
 
+Follow the 'TODO' prompts int the code's comments to accomplish the above tasks. 
+
+### Compile your program (Change your source code to machine code)
+When you are done with the changes listed above
+At the $ prompt type:
+
+  make hello_again
+
+### Run Your Program
+When you code has compiled without errors there will be a new 'executable' file created
+To run that file you will type the following in the terminal prompt
+
+  ./hello_again 
