@@ -50,17 +50,14 @@ printf("Hello %s\n", name);
 
 #### Compile your program
 When you are done with the changes listed above `compile` your program with the `make` command.
+**NOTE**: There is no *save* in the lab programming environment. Your program saves automatically as it goes. 
 
 {% spoiler "Hint for compile" %}
-At the $ prompt type the command as shown below:
+At the terminal $ prompt type the command as shown below:
 
 ```
   $ make hello
 ```
-
-
-
-
 {% endspoiler %}
 
 ##### DEBUG
@@ -81,6 +78,12 @@ $ help50 make hello
 When your code has compiled without errors there will be a new 'executable' file called
 
 **hello**
+
+You can run the list command on the terminal command line to see all the files in the directory
+
+```
+ls
+```
 
 To run that file you will type the following in the terminal prompt
 ````
@@ -142,4 +145,4 @@ Keeping in mind the course's policy on academic honesty, are you sure you want t
 
 Type 'yes' and you are done!
 
-Congrats, you just finished our first Coding lab. 
+Congrats, you just finished our first coding lab. 
