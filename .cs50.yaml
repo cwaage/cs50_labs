@@ -2,7 +2,7 @@ lab50: true
 submit50: true
 
 lab50:
-  submit: cs50/2018/ap/hello_again
+  submit: cwaage/cs50_labs/cs50_functions/hello_again
 
 lab50:
   files:
