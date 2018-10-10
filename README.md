@@ -20,5 +20,14 @@ At the $ prompt type:
 ### Run Your Program
 When you code has compiled without errors there will be a new 'executable' file created
 To run that file you will type the following in the terminal prompt
+  
+$ ./hello_again
 
-  ./hello_again 
+- Your program should generate the following output and then wait for your input 
+Please enter your name: 
+
+- Type your name and hit return 
+Please enter your name: Chris Waage
+
+- You should see the following output on your terminal 
+Hello Chris Waage
