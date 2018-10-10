@@ -66,3 +66,5 @@ Please enter your name: Chris Waage
 Hello Chris Waage
 ````
 {% submit "Ready to submit?" %}
+
+submit50 cs50/2018/fall/hello
