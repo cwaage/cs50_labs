@@ -16,6 +16,6 @@ int main(void)
   // TODO: Create a string variable called name
   // TODO: Get User's name with the get_string() function
   
-  // TODO: Change the printf() below to say hello "Hello 'name'" (where 'name'e is the value input by user).
+  // TODO: Change the printf() below to out: "Hello 'name'" (where 'name' is the string value input by user).
   printf("hello, world");
 }
