@@ -6,4 +6,7 @@ lab50:
     - !include hello.c
     - !exclude README.md
     
-
+submit50:
+  files: &files
+    - !exclude "*"
+    - !require hello.c
