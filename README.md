@@ -13,18 +13,16 @@ Follow the 'TODO' prompts int the code's comments to accomplish the tasks listed
   - Get User Input with the get_string() function
   - Print output using printf() with the %s string placeholder
 
-See how far you can get on your own. But if you forget some keywords or syntax, or it's just not working
-and you can figure out why, click on the hints listed below.
+See how far you can get on your own. But if you forget some keywords or syntax, or it's simply just not working ...
+don't hit your head against a wall. Click on the hints listed below and help will be revealed. 
 
 {% spoiler "Hint for cs50.h" %}
 
 To include a header file use the #include and the file name as shown below 
 
-
 ```c
 #include <cs50.h>
 ```
-
 {% endspoiler %}
 
 {% spoiler "Hint for get_string()" %}
@@ -39,7 +37,7 @@ string name = get_string("Please enter your name: ");
 
 {% spoiler "Hint for printf() with placeholder" %}
 The `%s` is needed in the `printf()` as a placeholder for the user data stored in the `name` variable,
-which is typed after the close of the quotes and comma as shown below
+which is typed after the close of the quotes and comma as shown below:
 
 ```c
 printf("Hello %s\n", name);
@@ -48,7 +46,7 @@ printf("Hello %s\n", name);
 {% endspoiler %}
 
 #### Compile your program (Change your source code to machine code)
-When you are done with the changes listed above `compile` your program with the `make` command
+When you are done with the changes listed above `compile` your program with the `make` command.
 
 {% spoiler "Hint for compile" %}
 At the $ prompt type the command as shown below:
@@ -84,7 +82,7 @@ Please enter your name: Chris Waage
 ````
 Hello Chris Waage
 ````
-{% next "Style, Check and Submit" %}
+{% next "Check, Style and Submit" %}
 
 #### Check
 You can use the 'check50' command as shown below to check if your syntax and function are correct
@@ -96,7 +94,7 @@ check50 cs50/2018/fall/hello
 #### Style
 
 Check if you are stylistically correct by usng the 'style50' check below. This does *not* check for
-syntax or other errors. It only checks if your code is inline with expected style requirements (spacing, indentations, etc...)
+syntax or other errors. It only checks if your code is inline with expected style requirements (spacing, indentations, etc...).
 
 For Recommended Style Notes visit the following link [CS50 Style Guide](https://cs50.readthedocs.io/style/c/)
 
