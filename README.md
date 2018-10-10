@@ -7,7 +7,7 @@
 It's a step by step interactive lab which looks pretty slick. Try it out and let me
 know what you think. - C Waage*
 
-Follow the 'TODO' prompts int the code's comments to accomplish the tasks listed below.
+Follow the 'TODO' prompts in the code's comments to accomplish the tasks listed below.
 
   - Add the cs50 library in as an include
   - Create a string variable called `name`
@@ -58,7 +58,22 @@ At the $ prompt type the command as shown below:
   $ make hello
 ```
 
+
+
+
 {% endspoiler %}
+
+##### DEBUG
+
+At this point you may see errors appear in the output. Don't Panic! This is all part of the coding process.
+Do your best to work through any errors. It's always best to start with the first error that is listed.
+
+If the C compiler error messages are confusing to you, try using `help50` (yes yet another command). This command is programmed
+to generate more human readable debug and error messages. It can be helpful in pinpointing a problem. Use the command as shown below. 
+
+```csh
+$ help50 make hello
+```
   
 {% next "Running Your Program" %}
 
