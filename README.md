@@ -14,7 +14,7 @@ Follow the 'TODO' prompts int the code's comments to accomplish the tasks listed
 Be sure to declare your variable as type string and assign it the value from the get_string input as below
 
 ```
-string variable_name = get_string("Please enter your name: ");
+string name = get_string("Please enter your name: ");
 ```
 
 {% endspoiler %}
@@ -45,20 +45,23 @@ At the $ prompt type as shown below:
 #### Run Your Program
 When you code has compiled without errors there will be a new 'executable' file created
 To run that file you will type the following in the terminal prompt
-  
+````
 $ ./hello_again
-
+````
 - Your program should generate the following output and then wait for your input 
 
+````
 Please enter your name: 
-
+````
 - Type your name and hit return 
-
-Please enter your name: Chris Waage
+````
+Please enter your name: **Chris Waage**
+````
 
 - You should see the following output on your terminal 
-
+````
 Hello Chris Waage
+````
 
 {% check "Does your code compile?" %}
 {{ compiles }}
