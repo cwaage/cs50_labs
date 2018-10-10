@@ -10,8 +10,23 @@ Follow the 'TODO' prompts int the code's comments to accomplish the tasks listed
   - Print output using printf() with the %s string placeholder
 
 
-{% spoiler "Try first without peaking: Click for help with get_string()" %}
-Be sure to declare your variable as type string and assign it the value from the get_string input as below
+See how far you can get on your own. But if you forget some keywords or syntax, or it's just not working
+and you can figure out why, click on the hints listed below.
+
+{% spoiler "Hint for cs50.h" %}
+
+To include a header file use the #include and the file name as shown below 
+
+
+```c
+#include <cs50.h>
+```
+
+{% endspoiler %}
+
+{% spoiler "Hint for get_string()" %}
+Declare your variable as type `string` and assign it the value from the `get_string()` function as below.
+Remember: the `get_string()` gets the data from the user, but you need a `string` variable to store that data. 
 
 ```c
 string name = get_string("Please enter your name: ");
@@ -19,8 +34,9 @@ string name = get_string("Please enter your name: ");
 
 {% endspoiler %}
 
-{% spoiler "Try first without peaking: Click for help with printf() with %s placeholder" %}
-Use
+{% spoiler "Hint for printf() with placeholder" %}
+The `%s` is needed in the `printf()` as a placeholder for the user data stored in the `name` variable,
+which is typed after the close of the quotes and comma as shown below
 
 ```c
 printf("Hello %s\n", name);
@@ -29,13 +45,13 @@ printf("Hello %s\n", name);
 {% endspoiler %}
 
 #### Compile your program (Change your source code to machine code)
-When you are done with the changes listed above compile your program with the make command
+When you are done with the changes listed above `compile` your program with the `make` command
 
-{% spoiler "Try it yourself before clicking" %}
-At the $ prompt type as shown below:
+{% spoiler "Hint for compile" %}
+At the $ prompt type the command as shown below:
 
 ```
-  $ make hello_again
+  $ make hello
 ```
 
 {% endspoiler %}
@@ -45,11 +61,11 @@ At the $ prompt type as shown below:
 #### Run Your Program
 When you code has compiled without errors there will be a new 'executable' file called
 
-**hello_again**
+**hello**
 
 To run that file you will type the following in the terminal prompt
 ````
-$ ./hello_again
+$ ./hello
 ````
 - Your program should generate the following output and then wait for your input 
 
@@ -65,6 +81,33 @@ Please enter your name: Chris Waage
 ````
 Hello Chris Waage
 ````
+{% next "Style, Check and Submit" %}
+
+#### Check
+You can use the 'check50' command as shown below to check if your syntax and function are correct
+
+```
+check50 cs50/2018/fall/hello
+```
+
+#### Style
+
+Check if you are stylistically correct by usng the 'style50' check below. This does *not* check for
+syntax or other errors. It only checks if your code is inline with expected style requirements (spacing, indentations, etc...)
+
+For Recommended Style Notes visit the following link [CS50 Style Guide](https://cs50.readthedocs.io/style/c/)
+
+```
+style50 hello.c
+```
+
 {% submit "Ready to submit?" %}
 
+#### Submit
+
+After you have checked your style and syntax above you are ready to submit your code. 
+You can submit your project directly from the command line as shown below. 
+
+```
 submit50 cs50/2018/fall/hello
+```
