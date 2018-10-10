@@ -1,14 +1,17 @@
 # cs50_labs
 
 ## Hello Again 
-### Adding Interactive Features To Your Program 
+### Adding User Data To Your Program 
+
+*Hello Orcas AP CSPers. I have been experimenting with this new feature for the class. 
+It's a step by step interactive lab which looks pretty slick. Try it out and let me
+know what you think. - C Waage*
 
 Follow the 'TODO' prompts int the code's comments to accomplish the tasks listed below.
 
   - Add the cs50 library in as an include
   - Get User Input with the get_string() function
   - Print output using printf() with the %s string placeholder
-
 
 See how far you can get on your own. But if you forget some keywords or syntax, or it's just not working
 and you can figure out why, click on the hints listed below.
@@ -100,8 +103,6 @@ For Recommended Style Notes visit the following link [CS50 Style Guide](https://
 ```
 style50 hello.c
 ```
-
-{% submit "Ready to submit?" %}
 
 #### Submit
 
