@@ -16,6 +16,8 @@ When you are done with the changes listed above
 At the $ prompt type:
 
   make hello_again
+  
+{% next "Running Your Program" %}
 
 #### Run Your Program
 When you code has compiled without errors there will be a new 'executable' file created
