@@ -3,7 +3,7 @@ submit50: true
 
 lab50:
   files:
-    - !include hello_again.c
+    - !include hello.c
     - !exclude README.md
     
 
