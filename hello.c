@@ -1,6 +1,6 @@
 /*
   AP CSP
-  Instructor: C. Waage
+  Teacher: C. Waage
   Date: 10/10/2018
 
   Follow the TODO prompts below to add user input 
