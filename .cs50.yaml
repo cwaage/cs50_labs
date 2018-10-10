@@ -1,9 +1,17 @@
 lab50: true
 
 lab50:
+  submit: cs50/labs/hello_again
   files:
     - !include hello_again.c
     - !exclude README.md
     
-lab50:
-  submit: cs50/labs/hello_again
+submit50: true
+    
+submit50:
+  files: &files
+    - !exclude "*"
+    - !require hello_again.c
+
+check50:
+  files: *files
