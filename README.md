@@ -31,7 +31,7 @@ printf("Hello %s\n", name);
 #### Compile your program (Change your source code to machine code)
 When you are done with the changes listed above compile your program with the make command
 
-{% spoiler "Try it yourself without looking" %}
+{% spoiler "Try it yourself before clicking" %}
 At the $ prompt type as shown below:
 
 ```
@@ -43,7 +43,10 @@ At the $ prompt type as shown below:
 {% next "Running Your Program" %}
 
 #### Run Your Program
-When you code has compiled without errors there will be a new 'executable' file created
+When you code has compiled without errors there will be a new 'executable' file called
+
+**hello_again**
+
 To run that file you will type the following in the terminal prompt
 ````
 $ ./hello_again
@@ -55,16 +58,11 @@ Please enter your name:
 ````
 - Type your name and hit return 
 ````
-Please enter your name: **Chris Waage**
+Please enter your name: Chris Waage
 ````
 
 - You should see the following output on your terminal 
 ````
 Hello Chris Waage
 ````
-
-{% check "Does your code compile?" %}
-{{ compiles }}
-{% endcheck %}
-
 {% submit "Ready to submit?" %}
