@@ -79,13 +79,13 @@ When your code has compiled without errors there will be a new 'executable' file
 
 **hello**
 
-You can run the list command on the terminal command line to see all the files in the directory
+You can run the list command at the terminal $ prompt to see all the files in the directory
 
 ```
 ls
 ```
 
-To run that file you will type the following in the terminal prompt
+To run the executable `hello` file you will type the following at the terminal prompt
 ````
 $ ./hello
 ````
