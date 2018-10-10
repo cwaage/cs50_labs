@@ -7,11 +7,3 @@ lab50:
     - !exclude README.md
     
 submit50: true
-    
-submit50:
-  files: &files
-    - !exclude "*"
-    - !require hello_again.c
-
-check50:
-  files: *files
