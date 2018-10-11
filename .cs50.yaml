@@ -1,10 +1,10 @@
 lab50:
   files:
     - !include fahrenheit.c
-    - !include pseudocode.txt
+    - !exclude pseudocode.txt
+    - !exclude "README.md"
 
 submit50:
   files: &files
     - !exclude "*"
-    - !require pseudocode.txt
     - !require fahrenheit.c
