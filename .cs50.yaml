@@ -1,4 +1,10 @@
-lab50: true
-  files:
-    - !include fahrenheit.c
-    - !include pseudocode.txt
+lab50:
+  file:
+    - fahrenheit.c
+    - pseudocode.txt
+
+submit50:
+  files: &files
+    - !exclude "*"
+    - !require pseudocode.txt
+    - !require fahrenheit.c
