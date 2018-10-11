@@ -70,4 +70,5 @@ Pick the appropriate function to assign the variable of the Celsius value input 
     %f // for float
     %lld // for long long
 ```
+{% endspoiler %}
 
