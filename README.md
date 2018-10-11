@@ -149,12 +149,10 @@ For your program (to get all smiley faces when you check it) you will need to li
 To summarize the above, you need your program to ...
 
   - Declare a your Celcius variable of an appropriate type to hold decimal values
-  - Assign that variable the value input by the user with the the apprpriate get_* function from `cs50.h`
+  - Assign that variable the value input by the user with the  appropriate get_* function from `cs50.h`
   - Do some math to convert Celcius to Fahenheit using the conversion formula listed above
   - Assign a Fahrenheit variable the converted value
   - Print the Fahrenheit value to output, limiting it to a single decimal place 
-
-{% next %}
 
 {% next "Compile" %}
 
