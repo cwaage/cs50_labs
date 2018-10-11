@@ -46,3 +46,28 @@ string // string of characters ( defined in cs50.h )
 ```
 
 {% endspoiler %}
+
+{% next %}
+
+### Getting Input from User
+
+In `hello_again.c` you used the `cs50.h` function `get_string()` to get the user's name.
+
+```c
+    string name = get_string("Enter your name: ");
+```
+
+There are functions to get user input of nearly all types: `get_int`, `get_float`, `get_double`, `get_long`, `get_char`.
+Pick the appropriate function to assign the variable of the Celsius value input from user.
+
+### Formatting output with embedded placeholders.
+
+{% spoiler "Placeholders by variable type" %}
+
+```c
+    %s // for string
+    %i // for int
+    %f // for float
+    %lld // for long long
+```
+
