@@ -3,5 +3,3 @@ lab50: true
     - !exclude "*"
     - !include fahrenheit.c
     - !include pseudocode.txt
-    
-submit50: true
