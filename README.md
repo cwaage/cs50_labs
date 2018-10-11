@@ -134,56 +134,43 @@ int main(void)
    printf("%.2f\n", pi);
 }
 ```
-
 But, if you look closely at the printf() function you may notice that the 
-the float %f placeholder has a **.2** sandwiched between the '%' and the 'f' ( %**.2**f )
+the float %f placeholder has a **.2** sandwiched between the `%` and the `f` ( %**.2**f )
 
-This limits the precision of the display to two decimal places. And will print to output
-as ``3.14``.
+This limits the precision of the output to two decimal places. And will print to output
+as `3.14`.
+
+For your program (to get all smiley faces when you check it) you will need to limit your converted Farenheit value to one decimal place. If `%.2f` prints `3.14` how would alter that to print a single decimal place or  `3.1`?
 
 {% next %} 
 
+### Putting the pieces together
 
-{% spoiler "Hint for get_string()" %}
-Declare your variable as type `string` and assign it the value from the `get_string()` function as below.
-Remember: the `get_string()` gets the data from the user, but you need a `string` variable to store that data.
+To summarize the above, you need your program to ...
 
-```c
-string name = get_string("Please enter your name: ");
-```
+  - Declare a your Celcius variable of an appropriate type to hold decimal values
+  - Assign that variable the value input by the user with the the apprpriate get_* function from `cs50.h`
+  - Do some math to convert Celcius to Fahenheit using the conversion formula listed above
+  - Assign a Fahrenheit variable the converted value
+  - Print the Fahrenheit value to output, limiting it to a single decimal place 
 
-{% endspoiler %}
-
-{% spoiler "Hint for printf() with placeholder" %}
-The `%s` is needed in the `printf()` as a placeholder for the user data stored in the `name` variable,
-which is typed after the close of the quotes and comma as shown below:
-
-```c
-printf("Hello %s\n", name);
-```
-
-{% endspoiler %}
+{% next %}
 
 {% next "Compile" %}
 
 #### Compile your program
-When you are done with the changes listed above `compile` your program with the `make` command.
-**NOTE**: There is no *save* in the lab programming environment. Your program saves automatically as it goes.
-
-{% spoiler "Hint for compile" %}
-At the terminal $ prompt type the command as shown below:
+When you are done coding the above,  `compile` your program with the `make` command.
 
 ```
   $ make fahrenheit
 ```
-{% endspoiler %}
 
 ##### DEBUG
 
-At this point you may see errors appear in the output. This should be getting familiar, and you know not to panic. I hope.
-Do your best to work through any errors. It's always best to start with the first error that is listed.
+At this point you may see errors reported in the terminal. Don't worry, even expert programmers have to deal with compile errors on most of their programs. 
+Do your best to work through any them. It's always best to start with the first error that is report. Sometimes fixing the first error fixes ALL of them. 
 
-If the C compiler error messages are confusing to you, try using `help50` (yes yet another command). This command is programmed
+If the C compiler error messages are confusing to you, try using `help50`. This command is programmed by those smart Harvard folks
 to generate more human readable debug and error messages. It can be helpful in pinpointing a problem. Use the command as shown below.
 
 ```csh
