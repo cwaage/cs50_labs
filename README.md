@@ -6,6 +6,13 @@
 This lab will take you through the process of creating a program that
 converts degrees in Celsius to Fahrenheit.
 
+To function succesfully it needs to do the following:
+
+  - Declare a variable to store input from the user
+  - Get input from the user
+  - Do some math to convert Celsius to Fahrenheit
+  - Output converted temperature in Fahenheit to one decimal place (i.e. 32.0) 
+
 {% spoiler "Command Line" %}
 
 The following is the input and output that will be generated when you successfully
@@ -21,7 +28,10 @@ F: 32.0
 
 {% endspoiler %}
 
-### Variable And Data Types
+{% next %}
+
+### Declaring your Celsius Variable
+#### Variable And Data Types
 
 Variables store values so we can save data and reuse it later.
 The C Programming language requires you to specify the type of a variable when you declare it.
@@ -36,13 +46,13 @@ For this program the variables that hold the values for the Celsius and Fahrenhe
 {% spoiler List of Variable Types %}
 
 ```c
-int // whole numbers
-long long // whole numbers
-float // decimals
-double // decimals
-char // single characters
-bool // true / false ( defined in cs50.h )
-string // string of characters ( defined in cs50.h )
+int // whole numbers (4 bytes)
+long long // whole numbers (8 bytes)
+float // decimals (4 bytes)
+double // decimals (8 bytes)
+char // single characters (1 byte)
+bool // true / false ( defined in cs50.h ) (1 bytes)
+string // string of characters ( defined in cs50.h ) (4 or 8 bytes)
 ```
 
 {% endspoiler %}
@@ -58,7 +68,27 @@ In `hello_again.c` you used the `cs50.h` function `get_string()` to get the user
 ```
 
 There are functions to get user input of nearly all types: `get_int`, `get_float`, `get_double`, `get_long`, `get_char`.
-Pick the appropriate function to assign the variable of the Celsius value input from user.
+Pick the appropriate function to assign your Celsius variable the value input from user.
+
+{% next %}
+
+### Do The Math
+#### Using operators to convert
+
+The formula for converting Fahrenheit to Celsius written out the long way looks something like ...
+
+Celsius (°C) temp, multiplied by 9, divided by 5, and then add 32. The result is the equivalent temperature in degrees Fahrenheit (°F). For the more visually inclined, click the button below:
+
+{% spoiler "Formula" %}
+
+```c
+  F = ((C * 9) / 5) + 32
+```
+{% endspoiler %}
+
+Code the convertion, assigning the a variable the converted value 
+
+{% next %}
 
 ### Formatting output with embedded placeholders.
 
