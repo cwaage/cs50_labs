@@ -238,11 +238,12 @@ You will be prompted for your github credentials (user name/password) and at the
 
 ```csh
 Files that will be submitted:
-./hello.c
+./fahrenheit.c
 Files that won't be submitted:
 ./.bash_history
-./hello
+./fahrenheit
+./pseudocode.txt
 Keeping in mind the course's policy on academic honesty, are you sure you want to submit these files (yes/no)?
 ```
 
-Type 'yes' and you are done!
+Type 'yes' and you are done! Congrats!
