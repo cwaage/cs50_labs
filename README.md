@@ -52,7 +52,7 @@ When you are done with the changes listed above `compile` your program with the 
 At the terminal $ prompt type the command as shown below:
 
 ```
-  $ make hello
+  $ make fahrenheit
 ```
 {% endspoiler %}
 
@@ -65,7 +65,7 @@ If the C compiler error messages are confusing to you, try using `help50` (yes y
 to generate more human readable debug and error messages. It can be helpful in pinpointing a problem. Use the command as shown below. 
 
 ```csh
-$ help50 make hello
+$ help50 make fahrenheit
 ```
   
 {% next "Running Your Program" %}
@@ -73,7 +73,7 @@ $ help50 make hello
 #### Run Your Program
 When your code has compiled without errors there will be a new 'executable' file called
 
-**hello**
+**fahrenheit**
 
 You can run the list command at the terminal $ prompt to see all the files in the directory
 
@@ -81,31 +81,30 @@ You can run the list command at the terminal $ prompt to see all the files in th
 ls
 ```
 
-To run the executable `hello` file you will type the following at the terminal prompt
+To run the executable `fahrenheit` file you will type the following at the terminal prompt
 ````
-$ ./hello
+$ ./fahrenheit
 ````
 - Your program should generate the following output and then wait for your input 
 
-````
-Please enter your name: 
-````
-- Type your name and hit return 
-````
-Please enter your name: Chris Waage
-````
-
+```
+C:
+```
+- Type a temperature as below 
+```
+C: 100
+```
 - You should see the following output on your terminal 
-````
-Hello Chris Waage
-````
+```
+F: 212.0
+```
 {% next "Check, Style and Submit" %}
 
 #### Check
 You can use the 'check50' command as shown below to check if your syntax and function are correct
 
 ```
-check50 cs50/2018/fall/hello
+check50 cs50/2018/ap/fahrenheit
 ```
 
 #### Style
@@ -116,7 +115,7 @@ syntax or other errors. It only checks if your code is inline with expected styl
 For Recommended Style Notes visit the following link [CS50 Style Guide](https://cs50.readthedocs.io/style/c/)
 
 ```
-style50 hello.c
+style50 fahrenheit.c
 ```
 
 #### Submit
@@ -125,7 +124,7 @@ After you have checked your style and syntax above you are ready to submit your 
 You can submit your project directly from the command line as shown below. 
 
 ```
-submit50 cs50/2018/fall/hello
+submit50 cs50/2018/ap/fahrenheit
 ```
 
 You will be prompted for your github credentials (user name/password) and at the end of the process may see a message like the following:
