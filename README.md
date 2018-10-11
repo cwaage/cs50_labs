@@ -8,8 +8,8 @@ converts degrees in Celsius to Fahrenheit.
 
 {% spoiler "Command Line" %}
 
-The following is the input and output that you will generate when you successfully 
-run your completed program called `fahrenheit` and run it from the terminal prompt.
+The following is the input and output that will be generated when you successfully 
+run your completed program called `fahrenheit` in the terminal.
 
 ```
 $ ./fahrenheit
