@@ -1,1 +1,7 @@
 lab50: true
+submit50: true
+
+  files:
+    - !exclude "*"
+    - !include fahrenheit.c
+    - !include pseudocode.txt
