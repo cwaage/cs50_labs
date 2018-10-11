@@ -17,9 +17,58 @@ C: 0
 F: 32.0
 ```
 
-**Note:** the '0' above is input by the user. 
+**Note:** the **0** above is input by the user. 
 
 {% endspoiler %}
+
+### Variable And Data Types
+
+Variables store values so we can save data and reuse it later.
+The C Programming language requires you to specify the type of a variable when you declare it.
+
+For example when you declare and assign an int variable called `x` you declare it as shown below.
+
+```c
+int x = 50;
+```
+For this program the variables that hold the values for the Celsius and Fahrenheit temps need to be expressed more percisely than integers, so you need to set their type as one that can store a decimal value.  
+
+{% spoiler List of Variable Types %}
+
+```c
+int // whole numbers
+long long // whole numbers
+float // decimals
+double // decimals 
+char // single characters
+bool // true / false ( defined in cs50.h ) 
+string // string of characters ( defined in cs50.h ) 
+```
+
+{% endspoiler %}
+
+### Getting Input from User
+
+There’s not just `get_string` in `cs50.h`. 
+There are functions to get user input of nearly all types: `get_int`, `get_float`, `get_double`, `get_long`, `get_char`.
+
+### Formatting output with embedded placeholders. 
+
+%s for string
+%i for int
+%f for float
+%lld for long
+
+```c
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    string name = get_string("Enter your name: ");
+    printf("hello, %s\n", name);
+}
+```
 
 
 {% spoiler "Hint for get_string()" %}
