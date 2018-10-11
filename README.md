@@ -122,7 +122,8 @@ variable type.
 
 You can specify the number of decimal places that display to output.
 
-For example the following example ...
+For example the following code example defines pi to the 10th decimal place.
+
 
 ```c
 #include <stdio.h>
@@ -133,6 +134,12 @@ int main(void)
    printf("%.2f\n", pi);
 }
 ```
+
+But, if you look closely at the printf() function you may notice that the 
+the float %f placeholder has a **.2** sandwiched between the '%' and the 'f' ( %**.2**f )
+
+This limits the precision of the display to two decimal places. And will print to output
+as ``3.14``.
 
 {% next %} 
 
