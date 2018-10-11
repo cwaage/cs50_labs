@@ -1,6 +1,5 @@
 lab50:
   files:
-    - !exclude README.md
     - !include fahrenheit.c
     - !include pseudocode.txt
 
