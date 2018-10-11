@@ -1,5 +1,5 @@
 lab50:
-  file:
+  files:
     - fahrenheit.c
     - pseudocode.txt
 
