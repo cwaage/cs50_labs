@@ -36,7 +36,7 @@ F: 32.0
 Variables store values so we can save data and reuse it later.
 The C Programming language requires you to specify the type of a variable when you declare it.
 
-For example, you declare and assign an int variable called `x` you as shown below:
+For example, you declare and assign an int variable called `x` as shown below:
 
 ```c
 int x = 50;
@@ -92,6 +92,20 @@ Code the convertion, assigning the a variable the converted value
 
 ### Formatting output with embedded placeholders.
 
+In 'hello_again.c' we used the %s placeholder to print a variable value
+embedded in a "string" as shown below. 
+
+```c
+int main(void)
+{
+    string name = get_string("Enter your name: ");
+    printf("hello, %s\n", name);
+}
+```
+
+For this program you need to pick the appropriate placeholder for your
+variable type. 
+
 {% spoiler "Placeholders by variable type" %}
 
 ```c
@@ -102,16 +116,26 @@ Code the convertion, assigning the a variable the converted value
 ```
 {% endspoiler %}
 
+{% next %}
+
+### Set the number of decimal places to display
+
+You can specify the number of decimal places that display to output.
+
+For example the following example ...
+
 ```c
-#include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 {
-    string name = get_string("Enter your name: ");
-    printf("hello, %s\n", name);
+   float pi = 3.1415926535;
+   printf("%.2f\n", pi);
 }
 ```
+
+{% next %} 
+
 
 {% spoiler "Hint for get_string()" %}
 Declare your variable as type `string` and assign it the value from the `get_string()` function as below.
