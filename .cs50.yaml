@@ -1,7 +1,7 @@
 lab50:
   files:
-    - fahrenheit.c
-    - pseudocode.txt
+    - !include fahrenheit.c
+    - !include pseudocode.txt
 
 submit50:
   files: &files
