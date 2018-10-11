@@ -119,7 +119,7 @@ At the terminal $ prompt type the command as shown below:
 
 ##### DEBUG
 
-At this point you may see errors appear in the output. Don't Panic! This is all part of the coding process.
+At this point you may see errors appear in the output. This should be getting familiar, and you know not to panic. I hope. 
 Do your best to work through any errors. It's always best to start with the first error that is listed.
 
 If the C compiler error messages are confusing to you, try using `help50` (yes yet another command). This command is programmed
@@ -200,5 +200,3 @@ Keeping in mind the course's policy on academic honesty, are you sure you want t
 ```
 
 Type 'yes' and you are done!
-
-Congrats, you just finished our first coding lab. 
