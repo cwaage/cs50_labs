@@ -26,7 +26,7 @@ F: 32.0
 Variables store values so we can save data and reuse it later.
 The C Programming language requires you to specify the type of a variable when you declare it.
 
-For example when you declare and assign an int variable called `x` you declare it as shown below.
+For example, you declare and assign an int variable called `x` you as shown below:
 
 ```c
 int x = 50;
@@ -47,17 +47,28 @@ string // string of characters ( defined in cs50.h )
 
 {% endspoiler %}
 
+{% next %}
+
 ### Getting Input from User
 
-There’s not just `get_string` in `cs50.h`. 
+In `hello_again.c` you used the `cs50.h` function `get_string()` to get the user's name.
+
+```c
+    string name = get_string("Enter your name: ");
+```
 There are functions to get user input of nearly all types: `get_int`, `get_float`, `get_double`, `get_long`, `get_char`.
+Pick the appropriate function to assign the variable that holds the Celsius value input from user. 
 
 ### Formatting output with embedded placeholders. 
 
-%s for string
-%i for int
-%f for float
-%lld for long
+{% spoiler "Placeholders by variable type" %}
+
+```c
+    %s // for string
+    %i // for int
+    %f // for float
+    %lld // for long long
+```
 
 ```c
 #include <cs50.h>
