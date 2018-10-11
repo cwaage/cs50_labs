@@ -83,7 +83,7 @@ int main(void)
 ```
 
 
-{% spoiler "Hint for get_string()" %}
+{% spoiler %}
 Declare your variable as type `string` and assign it the value from the `get_string()` function as below.
 Remember: the `get_string()` gets the data from the user, but you need a `string` variable to store that data. 
 
