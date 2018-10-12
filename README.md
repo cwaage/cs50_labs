@@ -73,7 +73,7 @@ by creating int variables to capture each of the equations below.
     - (12 + 3) / 4 * 2
     - 1 + 2 * 3 + 7 * 2 % 5
 
-**For Example **
+**For Example**
 
 ```c
 int eq0 = 1 + 2 * 3 + 7 * 2 % 5;
@@ -100,13 +100,9 @@ After you have coded each of the equations and assigned them to variables, creat
     - displays your **predicted** value for each equation 
     - and the actual value as calculated by C
 
-    
-{% spoiler "Example" %}
 ```c
 printf("I predict eq0 will equal 2. C calcualtes eq0 to be %i\n", eq0);
 ```
-
-{% endspoiler %}
 
 If your predicted value is different, don't fret. Just try to understand why there's a mismatch. 
 If your predicted value is the same ... you get a Gold Star. Brag to your friends. 
