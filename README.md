@@ -15,7 +15,7 @@ There is no `check50` for this assignment, but you can run `help50` when you com
 $ help50 make unit1_practice_lab_0.c
 ```
 
-{% next (First TODO) %}
+{% next First TODO 0 %}
 
 ### Practice with Formatted printing and get functions.
 
@@ -50,7 +50,7 @@ printf("Your name is %s and your are %i years old. You wear size %f shoes.\n", n
 ```
 {% endspoiler %}
 
-{% next %}
+{% next TODO 1 %}
 
 ### Math Operators
 
@@ -70,6 +70,8 @@ int eq1 = 2 + 3 * 4 - 6;
 ```
 
 {% endspoiler %}
+
+{% next TODO 2 %}
 
 After you have coded each of the equations and assigned them to variables, create a printf() statement that 
 
