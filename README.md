@@ -89,4 +89,4 @@ If your predicted value is the same ... you get a Gold Star. Brag to your friend
 
 When you have completed the above, comtinue on with the Fahenheit assignment listed at the link below.
 
-    -[Fahenheit](https://lab.cs50.io/cwaage/cs50_labs/operators/fahrenheit/)
+   [Fahenheit](https://lab.cs50.io/cwaage/cs50_labs/operators/fahrenheit/)
