@@ -15,7 +15,7 @@ There is no `check50` for this assignment, but you can run `help50` when you com
 $ help50 make unit1_practice_lab_0.c
 ```
 
-{% next First TODO 0 %}
+{% next TODO 0 %}
 
 ### Practice with Formatted printing and get functions.
 
