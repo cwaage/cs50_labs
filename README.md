@@ -112,7 +112,7 @@ make unit1_practice_lab_0.c
 
 Debug, Run, and Check Your Output ...
 
-{% next TODO 3}
+{% next TODO 3 %}
 
 Declare the value listed below. 
 
