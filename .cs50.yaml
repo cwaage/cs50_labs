@@ -1,3 +1,5 @@
+lab50: true
+
 lab50:
   files:
     - !include unit1_practice_lab_0.c
