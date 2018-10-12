@@ -37,7 +37,7 @@ Ask your user to input information that will be assigned to each of those variab
 ```
 {% endspoiler %}
 
-####
+#### Print Variable Values with Placeholders 
 
 Print to output each of those in a single printf() statement. You will have to use multiple placeholders in a single printf() and include your variables after the quote as shown in the example below.
 
@@ -46,7 +46,7 @@ Print to output each of those in a single printf() statement. You will have to u
 The placeholders `%s` , `%i`, and `%f` in the example below will be filled in with the variable values contained in the variables `name`, `age`, and `shoe_size`
 
 ```c
-     printf("Your name is %s and your are %i years old. You wear size %f shoes.\n", name, age, shoe_size);
+printf("Your name is %s and your are %i years old. You wear size %f shoes.\n", name, age, shoe_size);
 ```
 {% endspoiler %}
 
@@ -89,4 +89,4 @@ If your predicted value is the same ... you get a Gold Star. Brag to your friend
 
 When you have completed the above, comtinue on with the Fahenheit assignment listed at the link below.
 
-   [Fahenheit](https://lab.cs50.io/cwaage/cs50_labs/operators/fahrenheit/)
+[Fahenheit](https://lab.cs50.io/cwaage/cs50_labs/operators/fahrenheit/)
