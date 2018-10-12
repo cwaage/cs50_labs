@@ -50,6 +50,14 @@ printf("Your name is %s and your are %i years old. You wear size %f shoes.\n", n
 ```
 {% endspoiler %}
 
+Compile
+
+```
+make unit1_practice_lab_0.c
+```
+
+Debug, Run, and Check Your Output ...
+
 {% next TODO 1 %}
 
 ### Math Operators
@@ -57,11 +65,10 @@ printf("Your name is %s and your are %i years old. You wear size %f shoes.\n", n
 In the next TODO section you will practice coding some math operations in C
 by creating int variables to capture each of the equations below.
 
-    - 1 + 2 * 3 + 7 * 2 % 5
     - 2 + 3 * 4 - 6
     - 14 / 7 * 2 + 30 / 5 + 1
     - (12 + 3) / 4 * 2
-    - (18 - 7) * (43 % 10)
+    - 1 + 2 * 3 + 7 * 2 % 5
 
 {% spoiler "Example" %}
 ```c
@@ -70,6 +77,14 @@ int eq1 = 2 + 3 * 4 - 6;
 ```
 
 {% endspoiler %}
+
+Compile
+
+```
+make unit1_practice_lab_0.c
+```
+
+Debug, Run, and Check Your Output ...
 
 {% next TODO 2 %}
 
@@ -89,6 +104,50 @@ printf("I predict eq0 will equal 2. C calcualtes eq0 to be %i\n", eq0);
 If your predicted value is different, don't fret. Just try to understand why there's a mismatch. 
 If your predicted value is the same ... you get a Gold Star. Brag to your friends. 
 
-When you have completed the above, comtinue on with the Fahenheit assignment listed at the link below.
+Compile
+
+```
+make unit1_practice_lab_0.c
+```
+
+Debug, Run, and Check Your Output ...
+
+{% next TODO 3}
+
+Declare the value listed below. 
+
+```c
+float e = 2.718281828459;
+```
+
+Create three printf() statements that print the value to the decimal places listed below
+
+    - 3 decimal places
+    - 5 decimal places
+    - 20 decimal places
+    
+{% spoiler "Example" %}
+```c
+// Print e to the 7th decimal place 
+printf("e to seven decimal places =  %0.7f\n", e);
+```
+
+{% endspoiler %}
+    
+
+Compile
+
+```
+make unit1_practice_lab_0.c
+```
+
+Debug, Run, and Check Your Output ...
+
+{% next  %}
+
+#### Fahrenheit Assignment
+
+When you have completed the above, you should be ready to complete the Fahenheit assignment.
+Click the link listed below to take you there. 
 
 [Fahenheit](https://lab.cs50.io/cwaage/cs50_labs/operators/fahrenheit/)
