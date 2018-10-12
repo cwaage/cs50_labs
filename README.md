@@ -1,6 +1,4 @@
-# cs50_labs
-
-# cs50_labs
+# AP CSP: cs50_labs
 
 ## Mini Lab
 ### Formatted Printing and Operators 
@@ -73,14 +71,22 @@ int eq1 = 2 + 3 * 4 - 6;
 
 {% endspoiler %}
 
-After you have coded each of the equations and variables print each variable in a seperate line of code that ...
-prints the value along with your prediction of each value.
+After you have coded each of the equations and assigned them to variables, create a printf() statement that 
 
+    - displays your **predicted** value for each equation 
+    - and the actual value as calculated by C
+
+    
 {% spoiler "Example" %}
 ```c
-printf("I predict x will equal 2. C calcualtes it to be %i\n", x);
+printf("I predict eq0 will equal 2. C calcualtes eq0 to be %i\n", eq0);
 ```
 
 {% endspoiler %}
 
+If your predicted value is different, don't fret. Just try to understand why there's a mismatch. 
+If your predicted value is the same ... you get a Gold Star. Brag to your friends. 
 
+When you have completed the above, comtinue on with the Fahenheit assignment listed at the link below.
+
+    -[Fahenheit](https://lab.cs50.io/cwaage/cs50_labs/operators/fahrenheit/)
