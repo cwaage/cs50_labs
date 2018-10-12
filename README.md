@@ -3,19 +3,19 @@
 ## Mini Lab
 ### Formatted Printing and Operators 
 
-This mini lab is designed to give you hands on practice
-with printf() and math operators.
+This mini lab is designed to give you hands on practice with printf() and math operators.
 
-Compile and run after each section to check if your code
-is working correctly.
+Use this Guide and the TODO notes in the code's comments to complete the tasks in each section. 
+
+Compile and run after each section to check if your code is working correctly.
 
 There is no `check50` for this assignment, but you can run `help50` when you compile your program:
 
 ```
-$ help50 make mini_lab_0.c
+$ help50 make unit1_practice_lab_0.c
 ```
 
-{% next %}
+{% next (First TODO) %}
 
 ### Practice with Formatted printing and get functions.
 
