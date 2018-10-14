@@ -36,11 +36,11 @@ $21474836.47
 ```
 Notice how this output suggests that the program should indeed re-prompt the user if he or she fails to cooperate with these rules (as by inputting too many days).
 
-{% next (TODO 0) %}
+{% next TODO 0 %}
 
 Declare two variables specified in the commnets. Do not assignment them any values. Those will be assigned by the user as specified in the following TODO blocks. 
 
-{% next (TODO 1) %}
+{% next TODO 1 %}
 
 TODO 1 : Create a loop block that
   - A. Executes at least once
@@ -61,7 +61,7 @@ Which loop block is garanteed do execute at least once? A for loop, while loop, 
 
 ```c
   // While loop 
-  while (x <= 20)
+  while (x <= 20) // Enters loop and repeats when true 
   {
     // Code to execture in the loop 
   }
@@ -72,13 +72,37 @@ Which loop block is garanteed do execute at least once? A for loop, while loop, 
   do 
   {
     // Code to execture in the loop 
-  }(x <= 20);
+  }(x <= 20); // Repeats when true 
 ```
 
 {% endspoiler %}
 
-{% next (TODO 2) %}
+{% next TODO 2 %}
 
-{% next (TODO 3) %}
+TODO 2 : Create a loop block that
+  A. Executes at least once
+  B. Assigns your variable for starting number of pennies from user input 
+  C. Repeats Block (Loops) when the input value is less than 1
 
-{% next (TODO 4) %}
+{% next TODO 3 %}
+
+TODO 3 : Calculate total value after the number of days
+ A. Assign that value to a long long variable 
+ B. Note: Use the pow() function from the math.h library in your equation
+
+{% spoiler Hint %}
+{% endspoiler %}
+
+{% next TODO 4 %}
+
+TODO 4 : Convert from number of pennies to currency format in dollars
+
+{% spoiler Hint %}
+{% endspoiler %}
+
+{% next TODO 5 %}
+
+TODO 5 : Print with two decimal places for correct currency format (i.e. '$4.27)
+Hopefully you are getting comfortable priting formatted doubles and floats to a specified decimal limit. 
+
+
