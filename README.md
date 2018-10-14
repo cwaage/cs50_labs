@@ -37,3 +37,48 @@ $21474836.47
 Notice how this output suggests that the program should indeed re-prompt the user if he or she fails to cooperate with these rules (as by inputting too many days).
 
 {% next (TODO 0) %}
+
+Declare two variables specified in the commnets. Do not assignment them any values. Those will be assigned by the user as specified in the following TODO blocks. 
+
+{% next (TODO 1) %}
+
+TODO 1 : Create a loop block that
+  - A. Executes at least once
+  - B. Assigns variable for number of days from user input 
+  - C. Repeats Block (Loops) when the input value is less than 28 or more than 31
+  
+Which loop block is garanteed do execute at least once? A for loop, while loop, or do while loop?
+
+{% spoiler Loop Syntax Reminder %}
+
+```c
+  // For Loop
+  for (int i = 0; i < 10; i++)
+  {
+    // Code to execture in the loop 
+  }
+```
+
+```c
+  // While loop 
+  while (x <= 20)
+  {
+    // Code to execture in the loop 
+  }
+```
+
+```c
+  // Do While loop 
+  do 
+  {
+    // Code to execture in the loop 
+  }(x <= 20);
+```
+
+{% endspoiler %}
+
+{% next (TODO 2) %}
+
+{% next (TODO 3) %}
+
+{% next (TODO 4) %}
