@@ -1,7 +1,7 @@
 #include<cs50.h>
 #include<stdio.h>
 // TODO 0
-// Need math header file, math.h 
+// Add math header file, math.h 
 
 int main(void)
 {
@@ -23,7 +23,6 @@ int main(void)
   // Declare a long long variable
   // Assign that variable the calculated total number of pennies
   // Note: Use the pow() function from the math.h library in your equation. 
-  // [pow() documentation link](https://reference.cs50.net/math/pow)
 
   // TODO 5 : Convert to currancy format
 
