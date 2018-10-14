@@ -46,17 +46,19 @@ Add the math.h header file to your source code. Why do think we'll need it?
 
 #### TODO 1
 
-Declare two variables specified in the commnets. Do not assignment them any values. Those will be assigned by the user as specified in the following TODO blocks. 
+  - Declare two variables specified in the commnets. 
+  - Do **not** assign them any values. 
+  - Those will be assigned by the user as specified in the following TODO blocks. 
 
 {% next TODO 2 %}
 
 #### TODO 2
 **Create a loop block that:**
   - A. Executes at least once
-  - B. Assigns variable for number of days from user input 
+  - B. Assigns variable that captures number of days in month from the user input 
   - C. Repeats Block (Loops) when the input value is less than 28 or more than 31
   
-Which loop block is garanteed do execute at least once? A for loop, while loop, or do while loop?
+Which loop block is garanteed do execute at least once?
 
 {% spoiler Loop Syntax Reminder %}
 
@@ -91,18 +93,23 @@ Which loop block is garanteed do execute at least once? A for loop, while loop, 
 #### TODO 3 
 **Create a loop block that:**
   - A. Executes at least once
-  - B. Assigns your variable for starting number of pennies from user input 
+  - B. Assigns your variable that captures the initial number of pennies from the user input 
   - C. Repeats Block (Loops) when the input value is less than 1
 
 {% next TODO 4 %}
 
 TODO 4 : 
 **Calculate total value after the number of days**
-  - A. Assign that value to a long long variable 
-  - B. Note: Use the pow() function from the math.h library in your equation
+ 
+  - A. Create a `long long` variable as this could be a very very large number, depending on the initial value.
+  - B. The Math For this equation is described in the hint below. It's OK to look. 
+  - C. Note: Use the pow() function from the math.h library in your equation
     - [pow() in math.h documentation](https://reference.cs50.net/math/pow)
 
 {% spoiler Hint %}
+
+
+
 {% endspoiler %}
 
 {% next TODO 5 %}
@@ -110,7 +117,14 @@ TODO 4 :
 #### TODO 5 
 **Convert from number of pennies to currency format in dollars**
 
+  - A. Your value calculated above is the total number of pennies. How do you convert pennies to dollars?
+
 {% spoiler Hint %}
+
+  - There are 100 pennies in a dollar.
+  - You can divide or take the reciprical and multiply. 
+  - Either way you need to assign a variable the converted value. 
+
 {% endspoiler %}
 
 {% next TODO 6 %}
