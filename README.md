@@ -38,6 +38,8 @@ Notice how this output suggests that the program should indeed re-prompt the use
 
 {% next TODO 0 %}
 
+TODO 0
+
 Declare two variables specified in the commnets. Do not assignment them any values. Those will be assigned by the user as specified in the following TODO blocks. 
 
 {% next TODO 1 %}
