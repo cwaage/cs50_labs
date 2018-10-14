@@ -38,17 +38,20 @@ Notice how this output suggests that the program should indeed re-prompt the use
 
 {% next TODO 0 %}
 
-Add the math.h header file to your source code. Why do we need it? 
+#### TODO 0
+
+Add the math.h header file to your source code. Why do think we'll need it? 
 
 {% next TODO 1 %}
 
-TODO 1
+#### TODO 1
 
 Declare two variables specified in the commnets. Do not assignment them any values. Those will be assigned by the user as specified in the following TODO blocks. 
 
 {% next TODO 2 %}
 
-TODO 2 : Create a loop block that
+#### TODO 2
+**Create a loop block that:**
   - A. Executes at least once
   - B. Assigns variable for number of days from user input 
   - C. Repeats Block (Loops) when the input value is less than 28 or more than 31
@@ -85,31 +88,35 @@ Which loop block is garanteed do execute at least once? A for loop, while loop, 
 
 {% next TODO 3 %}
 
-TODO 3 : Create a loop block that
-  A. Executes at least once
-  B. Assigns your variable for starting number of pennies from user input 
-  C. Repeats Block (Loops) when the input value is less than 1
+#### TODO 3 
+**Create a loop block that:**
+  - A. Executes at least once
+  - B. Assigns your variable for starting number of pennies from user input 
+  - C. Repeats Block (Loops) when the input value is less than 1
 
 {% next TODO 4 %}
 
-TODO 4 : Calculate total value after the number of days
- A. Assign that value to a long long variable 
- B. Note: Use the pow() function from the math.h library in your equation
- [pow() in math.h documentation](https://reference.cs50.net/math/pow)
+TODO 4 : 
+**Calculate total value after the number of days**
+  - A. Assign that value to a long long variable 
+  - B. Note: Use the pow() function from the math.h library in your equation
+    - [pow() in math.h documentation](https://reference.cs50.net/math/pow)
 
 {% spoiler Hint %}
 {% endspoiler %}
 
 {% next TODO 5 %}
 
-TODO 5 : Convert from number of pennies to currency format in dollars
+#### TODO 5 
+**Convert from number of pennies to currency format in dollars**
 
 {% spoiler Hint %}
 {% endspoiler %}
 
 {% next TODO 6 %}
 
-TODO 6 : Print with two decimal places for correct currency format (i.e. '$4.27)
+#### TODO 6 
+**Print with two decimal places for correct currency format (i.e. '$4.27)**
 Hopefully you are getting comfortable priting formatted doubles and floats to a specified decimal limit. 
 
 
