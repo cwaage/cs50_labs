@@ -13,21 +13,25 @@ Run
 ```
 ./practice_lab_1
 ```
+{% next Conditionals %}
 
 ### Conditionals 
 
-Declare and assign values to two `int` variables
+Two `int` variables are declared and assigned for you. 
 
 ```c
     int num1 = 20;
     int num2 = 30;
 ```
 
-In the code on the right complete the `if ... else if ... else` conditional block
-that tests 
+Below the variable declaration complete the `if ... else if ... else` conditional block that tests 
   - if num1 is greater than num2
   - else if num 2 is greater than num1
   - else // All other cases 
+  
+Compile and Run to see your output
+
+When your code executes correctly, try changing values of num1 and num2 to generate a different result. 
 
 Click the button below to see example code.
 
@@ -38,24 +42,6 @@ int num1 = 0;
 int num2 = 5;
 int num3 = 10;
 
-// if block: Execute if num1 > num2 is TRUE 
-if (num1 > num2)
-{
-  // Given the values above does this print?
-  printtf("num1 is greater than num2\n");
-}
-
-// if ... else
-if (num1 > num2) // Execute if num1 > num2 is TRUE 
-{
-  printtf("num1 is greater than num2\n");
-}
-else // Executes when num1 > num2 is FALSE  
-{
-  printtf("num1 is less than or equal to num2\n");
-}
-
-// if ... else ...  if ... else
 if (num1 > num2) // Execute if num1 > num2 is TRUE 
 {
   printtf("num1 is greater than num2\n");
