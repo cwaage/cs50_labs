@@ -21,7 +21,8 @@ What if you were given more than one penny on that first day? Or the month were 
 
 Implement, in a file called `pennies.c`, a program that first asks the user how many days there are in the month and then asks the user how many pennies he or she will receive on the first day of that month. The program should then calculate the amount that the user will have received in total by the end of the month (**not just on the last day**) if that amount is doubled on every day but the first, expressed not as pennies but as dollars and cents. 
 
-Note: If the user does not type in 28, 29, 30, or 31 for the number of days in the month, the program should prompt the user to retry. Note: If the user does not input a positive integer for the first day’s number of pennies, the program should prompt the user to retry.
+**Note:** If the user does not type in 28, 29, 30, or 31 for the number of days in the month, the program should prompt the user to retry. 
+**Note:** If the user does not input a positive integer for the first day’s number of pennies, the program should prompt the user to retry.
 
 For instance, your program might behave as follows, whereby underlined text represents some user’s input.
 
@@ -36,24 +37,16 @@ $21474836.47
 ```
 Notice how this output suggests that the program should indeed re-prompt the user if he or she fails to cooperate with these rules (as by inputting too many days).
 
-{% next TODO 0 %}
-
-#### TODO 0
-
-Add the math.h header file to your source code. Why do think we'll need it? 
-
-{% next TODO 1 %}
-
-#### TODO 1
+#### TODO 0 :
 
   - Declare two variables specified in the commnets. 
   - Do **not** assign them any values. 
   - Those will be assigned by the user as specified in the following TODO blocks. 
 
-{% next TODO 2 %}
+{% next TODO 1 %}
 
-#### TODO 2
-**Create a loop block that:**
+#### TODO 1 :
+**Create a loop that:**
   - A. Executes at least once
   - B. Assigns variable that captures number of days in month from the user input 
   - C. Repeats Block (Loops) when the input value is less than 28 or more than 31
@@ -88,48 +81,45 @@ Which loop block is garanteed do execute at least once?
 
 {% endspoiler %}
 
-{% next TODO 3 %}
+{% next TODO 2 %}
 
-#### TODO 3 
-**Create a loop block that:**
+#### TODO 2 :
+**Create a loop that:**
   - A. Executes at least once
   - B. Assigns your variable that captures the initial number of pennies from the user input 
   - C. Repeats Block (Loops) when the input value is less than 1
 
-{% next TODO 4 %}
+{% next TODO 3 %}
 
-TODO 4 : 
+#### TODO 3 : 
 **Calculate total value after the number of days**
  
   - A. Create a `long long` variable as this could be a very very large number, depending on the initial value.
-  - B. The Math For this equation is described in the hint below. It's OK to look. 
-  - C. Note: Use the pow() function from the math.h library in your equation
-    - [pow() in math.h documentation](https://reference.cs50.net/math/pow)
+  - B. While you can caluclate the value with a formula, try using a for loop to calculate the value
 
 {% spoiler Hint %}
 
-
-
+```C
+  // Create a for loop to repeat a total numer of times that is the same as the number of days in the month 
+  for (/* Your Code Here */)
+  {
+    // Each time through the loop double the number of pennies
+    // Reassign it to your long long variable 
+  }
+```
 {% endspoiler %}
 
-{% next TODO 5 %}
+{% next TODO 4 %}
 
-#### TODO 5 
+#### TODO 4 :
 **Convert from number of pennies to currency format in dollars**
 
-  - A. Your value calculated above is the total number of pennies. How do you convert pennies to dollars?
+  - Your value calculated above is the total number of pennies. Do some math to convert number of pennies to dollars and cents?
+  - You will be changing an long value to a decimal. You will need to create a new variable to capture the converted value. 
+ 
+{% next TODO 5 %}
 
-{% spoiler Hint %}
-
-  - There are 100 pennies in a dollar.
-  - You can divide or take the reciprical and multiply. 
-  - Either way you need to assign a variable the converted value. 
-
-{% endspoiler %}
-
-{% next TODO 6 %}
-
-#### TODO 6 
+#### TODO 5 :
 **Print with two decimal places for correct currency format (i.e. '$4.27)**
 Hopefully you are getting comfortable priting formatted doubles and floats to a specified decimal limit. 
 
