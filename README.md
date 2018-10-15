@@ -170,6 +170,8 @@ Days in month: <span style="color: green"> 30 </span><br />
 Pennies on first day: <span style="color: green"> 0 </span><br />
 Pennies on first day: <span style="color: green"> 2 </span><br />
 $21474836.46<br />
+<br />
+Notice above how the output "Days in month:" and "Pennies on first day:" repeat to prompt the user to enter data within acceptable ranges
 
 
 {% next "Check, Style and Submit" %}
