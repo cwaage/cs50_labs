@@ -48,7 +48,7 @@ int main (void)
     }
     else if ()
     {
-        printf("z is the maximum\n");
+        printf("y is the maximum\n");
     }
     else
     {
