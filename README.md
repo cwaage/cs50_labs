@@ -1,7 +1,33 @@
 # cs50_labs
 ## Practice Lab 1: Conditionals, Boolean Operators, Loops
 
+Complete each section below.
+Compile and run after you complete each section to see the results.
+
+Compile
+```
+make lab_practice_1
+```
+
+Run
+```
+./lab_practice_1
+```
+
 ### Conditionals 
+
+Declare and assign values to two `int` variables
+
+```c
+    int num1 = 20;
+    int num2 = 30;
+```
+
+In the code on the right complete the `if ... else if ... else` conditional block
+that tests 
+  - if num1 is greater than num2
+  - else if num 2 is greater than num1
+  - else // All other cases 
 
 Click the button below to see example code.
 
@@ -28,17 +54,17 @@ else // Executes when num1 > num2 is FALSE
 {
   printtf("num1 is less than or equal to num2\n");
 }
-// if ... else ...  if ... else
 
+// if ... else ...  if ... else
 if (num1 > num2) // Execute if num1 > num2 is TRUE 
 {
   printtf("num1 is greater than num2\n");
 }
-else if (num1 > num3) // Executes when num1 > num2 is FALSE  
+else if (num1 > num3) // Executes when num1 > num3 is TRUE  
 {
   printtf("num1 is greater than num3\n");
 }
-else
+else // Executes only when all if and else if blocks above are FALSE
 {
   printtf("num1 is not greater than num2 or num3\n");
 }
@@ -55,33 +81,100 @@ else
   ||  // or
   !   // not
 ```
+
+You can use boolean operators to test for multiple conditions in a single boolean expression.
+
+**AND**
+
+Both conditions must be true for the boolean expression to be evaluated as true
+
+Example:
+```c
+if (x > y && x > z) // Evaluates to TRUE if x is BOTH either greater than y AND greater than z
+```
+
+**OR**
+
+Only one conditions must be true for the boolean expression to be evaluated as true
+
+Example: 
+```c
+if (x > 20 || x < 0) // Evaluates to TRUE if x is either greater than 20 or less than 0
+```
+
+**Not**
+
+Negates the value or operator
+
+Example:
+```c
+if (x != 20) // Evalues to true when x is not equal to 20
+```
+Complete the code for this section to test for the maximum value of the three variables x, y, z
+  - The if block's boolean expression will check if x is greater than both y and z.
+  - The else if block's boolean expression will check if y is greater than both x and z
+  - The else block will print the only remaining option (which variable must be max if above blocks are FALSE)
+
 {% next Loops %}
 ### Loops
+
+In this section create the three different type of loops we have discussed
+
+  - do while
+  - while
+  - for
+
+#### do while
+For this loop, have you code execute only once, by coding the **boolean expression** set in the while(**boolean expression**)
+evaluate to false.
+
+#### while
+Create a while loop that repeats a message 4 times.
+Note: Remember to increment/decrement your control variable each time through the loop be sure it terminates (i.e. doesn't cause an infinite loop).
+
+
+#### for
+Create a for loop that loops 8 times and prints a message each time through the loop 
+
+You can refer to syntax for each loop type by clicking the button below  
 
 {% spoiler Loop Syntax Reminder %}
 
 ```c
-  // For Loop
-  for (int i = 0; i < 10; i++)
-  {
-    // Code to execture in the loop 
-  }
-```
+    /* ---------------------------------------- */
+    // do while loop
+    // Always enter loop block at least once
+    // Repeats while the boolean expression is TRUE
+    /* ---------------------------------------- */
+    int x = 9;
+    do
+    {
+        printf("do while loop: x equals %i\n", x);
+        x++; // x increments by one
+    } while(x < 10);
+    /* ---------------------------------------- */
 
-```c
-  // While loop 
-  while (x <= 20) // Enters loop and repeats when true 
-  {
-    // Code to execture in the loop 
-  }
-```
+    /* ---------------------------------------- */
+    // while loop
+    // Only Enter and Repeat when boolean expression is TRUE
+    /* ---------------------------------------- */
+    int y = 25; // Control Variable 
+    while (y > 20)
+    {
+        printf ("while loop: y = %i\n", y);
+        y -= 1; // Decrement y by one each time through the loop
+    }
+    /* ---------------------------------------- */
 
-```c
-  // Do While loop 
-  do 
-  {
-    // Code to execture in the loop 
-  }(x <= 20); // Repeats when true 
+
+    /* ---------------------------------------- */
+    // for loop
+    /* ---------------------------------------- */
+    // Repeat Loop 7 times
+    for (int i = 0; i < 7; i++)
+    {
+        printf("for Loop Count = %i\n", i + 1);
+    }
 ```
 
 {% endspoiler %}
@@ -114,175 +207,6 @@ In your code, create a for loop that repeats 5 times and multiply the z variable
 What will be the final value of z?
 
 
-#### TODO 1 :
-**Create a loop that:**
-  - A. Executes at least once
-  - B. Assigns variable that captures number of days in month from the user input 
-  - C. Repeats Block (Loops) when the input value is less than 28 or more than 31
-  
-Which loop block is garanteed do execute at least once?
 
-{% spoiler Loop Syntax Reminder %}
-
-```c
-  // For Loop
-  for (int i = 0; i < 10; i++)
-  {
-    // Code to execture in the loop 
-  }
-```
-
-```c
-  // While loop 
-  while (x <= 20) // Enters loop and repeats when true 
-  {
-    // Code to execture in the loop 
-  }
-```
-
-```c
-  // Do While loop 
-  do 
-  {
-    // Code to execture in the loop 
-  }(x <= 20); // Repeats when true 
-```
-
-{% endspoiler %}
-
-{% next TODO 2 %}
-
-#### TODO 2 :
-**Create a loop that:**
-  - A. Executes at least once
-  - B. Assign your variable for the initial number of pennies from the user input 
-  - C. Repeats Block (Loops) when the input value is less than 1
-
-{% next TODO 3 %}
-
-#### TODO 3 : 
-**Calculate total value after the number of days**
- 
-  - A. Create a `long long` variable as this could be a very very large number, depending on the initial value.
-  - B. While you can caluclate the value with a formula, try using a for loop to calculate the value
-
-{% spoiler Hint %}
-
-```C
-  // Create a for loop to repeat a total numer of times that is the same as the number of days in the month 
-  for (/* Your Code Here */)
-  {
-    // Each time through the loop double the number of pennies
-    // Reassign it to your long long variable 
-  }
-```
-{% endspoiler %}
-
-{% next TODO 4 %}
-
-#### TODO 4 :
-**Convert from number of pennies to currency format in dollars**
-
-  - Your value calculated above is the total number of pennies. Do some math to convert number of pennies to dollars and cents?
-  - You will be changing an long value to a decimal. You will need to create a new variable to capture the converted value. 
- 
-{% next TODO 5 %}
-
-#### TODO 5 :
-**Print with two decimal places for correct currency format (i.e. $4.27)**
-Hopefully you are getting comfortable priting formatted doubles and floats to a specified decimal limit. 
-
-{% next "Compile" %}
-
-#### Compile your program
-When you are done coding the above,  `compile` your program with the `make` command.
-
-```
-  $ make pennies
-```
-
-##### DEBUG
-
-At this point you may see errors reported in the terminal. Don't worry, even expert programmers have to deal with compile errors on most of their programs. 
-Do your best to work through any them. It's always best to start with the first error that is report. Sometimes fixing the first error fixes ALL of them. 
-
-If the C compiler error messages are confusing to you, try using `help50`. This command is programmed by those smart Harvard folks
-to generate more human readable debug and error messages. It can be helpful in pinpointing a problem. Use the command as shown below.
-
-```csh
-$ help50 make pennies
-```
-
-{% next "Running Your Program" %}
-
-#### Run Your Program
-When your code has compiled without errors there will be a new 'executable' file called
-
-**pennies**
-
-You can run the list command at the terminal $ prompt to see all the files in the directory
-
-```
-ls
-```
-
-To run the executable `pennies` file you will type the following at the terminal prompt
-````
-$ ./pennies
-````
-
-Example Program Output below (Green text is user input).
-
-~/workspace/unit1/pennies/ $ ./pennies<br />
-Days in month: <span style="color: green"> 5 </span><br />
-Days in month: <span style="color: green"> 30 </span><br />
-Pennies on first day: <span style="color: green"> 0 </span><br />
-Pennies on first day: <span style="color: green"> 2 </span><br />
-$21474836.46<br />
-<br />
-Notice above how the output "Days in month:" and "Pennies on first day:" repeat to prompt the user to enter data within acceptable ranges
-
-
-{% next "Check, Style and Submit" %}
-
-#### Check
-You can use the 'check50' command as shown below to check if your syntax and function are correct
-
-```
-check50 cs50/2018/ap/pennies
-```
-
-#### Style
-
-Check if you are stylistically correct by usng the 'style50' check below. This does *not* check for
-syntax or other errors. It only checks if your code is inline with expected style requirements (spacing, indentations, etc...).
-
-For Recommended Style Notes visit the following link [CS50 Style Guide](https://cs50.readthedocs.io/style/c/)
-
-```
-style50 pennies.c
-```
-
-#### Submit
-
-After you have checked your style and syntax above you are ready to submit your code.
-You can submit your project directly from the command line as shown below.
-
-```
-submit50 cs50/2018/ap/pennies
-```
-
-You will be prompted for your github credentials (user name/password) and at the end of the process may see a message like the following:
-
-```csh
-Files that will be submitted:
-./pennies.c
-Files that won't be submitted:
-./.bash_history
-./pennies
-Keeping in mind the course's policy on academic honesty, are you sure you want to submit these files (yes/no)?
-```
-
-Type **yes** and you are done! 
 
 
