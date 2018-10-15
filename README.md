@@ -23,8 +23,9 @@ Two `int` variables are declared and assigned for you.
     int num1 = 20;
     int num2 = 30;
 ```
+First Remove the two lines of code that comment out the section. 
 
-Below the variable declaration complete the `if ... else if ... else` conditional block that tests 
+Then below the variable declaration complete the `if ... else if ... else` conditional block that tests 
   - if num1 is greater than num2
   - else if num 2 is greater than num1
   - else // All other cases 
@@ -96,7 +97,9 @@ Example:
 ```c
 if (x != 20) // Evalues to true when x is not equal to 20
 ```
-Complete the code for this section to test for the maximum value of the three variables x, y, z
+First Remove the two lines of code that comment out the section. 
+
+Then complete the code for this section to test for the maximum value of the three variables x, y, z
   - The if block's boolean expression will check if x is greater than both y and z.
   - The else if block's boolean expression will check if y is greater than both x and z
   - The else block will print the only remaining option (which variable must be max if above blocks are FALSE)
@@ -110,14 +113,17 @@ In this section create the three different type of loops we have discussed
   - while
   - for
 
+First Remove the two lines of code that comment out the section. 
+
+Then code the loops below as specified.
+
 #### do while
-For this loop, have you code execute only once, by coding the **boolean expression** set in the while(**boolean expression**)
+For this loop, have your loop code execute only once, by coding the **boolean expression** set in the while(**boolean expression**)
 evaluate to false.
 
 #### while
 Create a while loop that repeats a message 4 times.
 Note: Remember to increment/decrement your control variable each time through the loop be sure it terminates (i.e. doesn't cause an infinite loop).
-
 
 #### for
 Create a for loop that loops 8 times and prints a message each time through the loop 
@@ -176,6 +182,8 @@ NOTE: There is a concept called **Scope**. Meaning if you declare your variable 
 it only exists within the loop's code. So declare it before the loop if it needs to be used
 elsewhere in your code. 
 
+Example: 
+
 ```c
 
   // Variable declared before the loop
@@ -189,8 +197,11 @@ elsewhere in your code.
 ```
 In the example above,  the value of `x` increases by two each time through the loop.
 
-In your code, create a for loop that repeats 5 times and multiply the z variable by 4 each time through the loop. 
-What will be the final value of z?
+First Remove the two lines of code that comment out the section. 
+
+Then in your code, create a for loop that repeats 3 times and multiply the z variable by 4 each time through the loop. 
+
+What will be the final value of z? Uncomment out the printf statement at the end of the section to check. 
 
 
 
