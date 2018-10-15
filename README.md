@@ -1,49 +1,46 @@
 # cs50_labs
-## Pennies
+## Practice Lab 1: Conditionals, Boolean Operators, Loops
 
-### Program Overview
+### Conditionals 
 
-If ever given the choice between $10,000,000 or a month’s worth of pennies, whereby you receive a penny the first day, two pennies the second, four pennies the third, and so forth … take the pennies. 
 
-Why? Exponentiation. Those pennies add up. Consider how many pennies you’d receive on the 31st day alone, not to mention on the days leading up to it:
+{% next Boolean Operators %}
+### Boolean Operators
 
+```c
+  &&  // and
+  ||  // or
+  !   // not
 ```
-1 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2
-  × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2
-  × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2
-
-  = 1073741824
- ```
-
-Put more succinctly, that’s 1 × 2<sup>30</sup>. Convert those pennies to dollars (by dividing by 100) and you get, what, over $10,000,000 on just that day. 
-
-What if you were given more than one penny on that first day? Or the month were February, in which case you’d get shortchanged a few million? (Best to take the pennies in January, March, May, July, August, October, or December.) Let’s find out.
-
-Implement, in a file called `pennies.c`, a program that first asks the user how many days there are in the month and then asks the user how many pennies he or she will receive on the first day of that month. The program should then calculate the amount that the user will have received in total by the end of the month (**not just on the last day**) if that amount is doubled on every day but the first, expressed not as pennies but as dollars and cents. 
-
-  - **Note:** If the user does not type in 28, 29, 30, or 31 for the number of days in the month, the program should prompt the user to retry. 
-  - **Note:** If the user does not input a positive integer for the first day’s number of pennies, the program should prompt the user to retry.
-
-For instance, your program might behave as follows. The green text represents user input.
-
-#### Command Line Input/Output 
+{% next Loops %}
+### Loops
 
 
-~/workspace/unit1/pennies/ $ ./pennies<br />
-Days in month: <span style="color: green"> 32 </span><br />
-Days in month: <span style="color: green"> 31 </span><br />
-Pennies on first day: <span style="color: green"> 1 </span><br />
-$21474836.47<br />
+{% next Accumlating Variable Values with Loops %}
+### Accumlating Variable Values with Loops
 
-Notice how this output suggests that the program should indeed re-prompt the user if he or she fails to cooperate with these rules (by inputting too many days).
+You can setup loops to continually update variables each time a loop executes.
 
-#### TODO 0 :
+#### Scope 
 
-  - Declare two variables specified in the comments. 
-  - Do **not** assign them any values. 
-  - Those will be assigned by the user as specified in the following TODO blocks. 
+NOTE: There is a concept called **Scope**. Meaning if you declare your variable inside the loop,
+it only exists within the loop's code. So declare it before the loop if it needs to be used
+elsewhere in your code. 
 
-{% next TODO 1 %}
+In the example below, the value of x is updated each time through the loop
+
+```c
+
+  // Variable declared before the loop
+  int x = 10; 
+  // For Loop
+  for (int i = 0; i < 10; i++)
+  {
+    // Add 2 to x each time the loop executes
+    x += 2;
+  }
+```
+
 
 #### TODO 1 :
 **Create a loop that:**
