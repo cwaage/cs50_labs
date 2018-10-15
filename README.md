@@ -15,9 +15,36 @@
 {% next Loops %}
 ### Loops
 
+{% spoiler Loop Syntax Reminder %}
 
-{% next Accumlating Variable Values with Loops %}
-### Accumlating Variable Values with Loops
+```c
+  // For Loop
+  for (int i = 0; i < 10; i++)
+  {
+    // Code to execture in the loop 
+  }
+```
+
+```c
+  // While loop 
+  while (x <= 20) // Enters loop and repeats when true 
+  {
+    // Code to execture in the loop 
+  }
+```
+
+```c
+  // Do While loop 
+  do 
+  {
+    // Code to execture in the loop 
+  }(x <= 20); // Repeats when true 
+```
+
+{% endspoiler %}
+
+{% next Accumulating Variable Values with Loops %}
+### Accumulating Variable Values with Loops
 
 You can setup loops to continually update variables each time a loop executes.
 
@@ -26,8 +53,6 @@ You can setup loops to continually update variables each time a loop executes.
 NOTE: There is a concept called **Scope**. Meaning if you declare your variable inside the loop,
 it only exists within the loop's code. So declare it before the loop if it needs to be used
 elsewhere in your code. 
-
-In the example below, the value of x is updated each time through the loop
 
 ```c
 
@@ -40,6 +65,10 @@ In the example below, the value of x is updated each time through the loop
     x += 2;
   }
 ```
+In the example above,  the value of `x` increases by two each time through the loop.
+
+In your code, create a for loop that repeats 5 times and multiply the z variable by 4 each time through the loop. 
+What will be the final value of z?
 
 
 #### TODO 1 :
