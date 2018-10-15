@@ -3,7 +3,7 @@
  * Boolean Operators 
  * Loops
  * Accumulating Values 
- * /
+ */
 
 #include <stdio.h>
 #include <cs50.h>
@@ -17,7 +17,7 @@ int main (void)
     int num1 = 20;
     int num2 = 30;
     
-    /* UNCOMMENT CODE TO COMPLETE (REMOVE THIS LINE AND LINE 33
+    /* UNCOMMENT CODE TO COMPLETE (REMOVE THIS LINE AND LINE AT END OF Conditionals Section)
     if() 
     {
         printf("num1 is greater than num2\n");
@@ -40,7 +40,7 @@ int main (void)
     int y = 2;
     int z = 8; 
 
-    /* UNCOMMENT CODE TO COMPLETE (REMOVE THIS LINE AND LINE 59
+    /* UNCOMMENT CODE TO COMPLETE (REMOVE THIS LINE AND LINE WITH CLOSING COMMENT AT END OF Boolean Expression Section)
 
     if ()
     {
@@ -62,13 +62,13 @@ int main (void)
     // Loops
     // ----------------------------------------
     
+    /* UNCOMMENT CODE TO COMPLETE (REMOVE THIS LINE AND LINE WITH CLOSING COMMENT AT END OF Loop Section)
+    
     // ----------------------------------------
     // do while loop
     // Always enter loop block at least once
     // Repeat while the boolean expression is TRUE
     // ----------------------------------------
-  
-    /* UNCOMMENT CODE TO COMPLETE (REMOVE THIS LINE AND NEXT LINE WITH CLOSING COMMENT)
     do
     {
  
@@ -79,8 +79,6 @@ int main (void)
     // while loop
     // Only Enter and Repeat when boolean expression is TRUE
     // ----------------------------------------
-  
-
     while ()
     {
  
@@ -97,14 +95,13 @@ int main (void)
         printf
     }
 
-    REMOVE THIS LINE OF CODE TO UNCOMMENT LOOP SECTION */
+    REMOVE THIS LINE OF CODE TO UNCOMMENT Loop Section */
 
     // ----------------------------------------
     // Accumulation Value
     // ----------------------------------------
 
-
-    /* UNCOMMENT CODE TO COMPLETE (REMOVE THIS LINE AND NEXT LINE WITH CLOSING COMMENT)
+    /* UNCOMMENT CODE TO COMPLETE (REMOVE THIS LINE AND LINE WITH CLOSING COMMENT AT END OF Accumulating Value Section)
     // Reassign z (declared above)
     z = 3;
 
@@ -117,6 +114,5 @@ int main (void)
     // TODO Uncomment the code below to print the z variable to display its final value
     // printf("After Accumulating Block Executes z = %i\n", z);
     
-    REMOVE THIS LINE OF CODE TO UNCOMMENT Accumulating Value Section */
-    
+    REMOVE THIS LINE OF CODE TO UNCOMMENT Accumulating Value Section */    
 }
