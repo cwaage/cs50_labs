@@ -63,6 +63,8 @@ else // Executes only when all if and else if blocks above are FALSE
 
 ### Boolean Operators
 
+In this sectin you will add boolean expressions that incorporate boolean operators 
+
 ```c
   &&  // and
   ||  // or
@@ -97,17 +99,20 @@ Example:
 ```c
 if (x != 20) // Evalues to true when x is not equal to 20
 ```
+
+To complete this section: 
+
 First Remove the two lines of code that comment out the section. 
 
-Then complete the code for this section to test for the maximum value of the three variables x, y, z
-  - The if block's boolean expression will check if x is greater than both y and z.
-  - The else if block's boolean expression will check if y is greater than both x and z
-  - The else block will print the only remaining option (which variable must be max if above blocks are FALSE)
+Then complete the code using boolean operators to test for the maximum value of the three variables x, y, z
+  - In the 'if' block code a boolean expression that will check if x is greater than both y and z.
+  - In the `else if` block code a boolean expression that will check if y is greater than both x and z
+  - In the `else` block code the print statment declaring the max (which variable must be max if above blocks are FALSE)
 
 {% next Loops %}
 ### Loops
 
-In this section create the three different type of loops we have discussed
+In this section you will create three different type of loops:
 
   - do while
   - while
@@ -119,7 +124,7 @@ Then code the loops below as specified.
 
 #### do while
 For this loop, have your loop code execute only once, by coding the **boolean expression** set in the while(**boolean expression**)
-evaluate to false.
+to evaluate to FALSE.
 
 #### while
 Create a while loop that repeats a message 4 times.
@@ -174,13 +179,7 @@ You can refer to syntax for each loop type by clicking the button below
 {% next Accumulating Variable Values with Loops %}
 ### Accumulating Variable Values with Loops
 
-You can setup loops to continually update variables each time a loop executes.
-
-#### Scope 
-
-NOTE: There is a concept called **Scope**. Meaning if you declare your variable inside the loop,
-it only exists within the loop's code. So declare it before the loop if it needs to be used
-elsewhere in your code. 
+In this section will create a loop that continually updates a variable each time the loop is executed. 
 
 Example: 
 
