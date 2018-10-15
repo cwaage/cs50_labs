@@ -205,7 +205,7 @@ Then in your code, create a for loop that repeats 3 times and multiply the z var
 Both of the following multiply z by 3 and then reassign z the result
 
 ```c
-z *= z;
+z *= 3;
 
 ```
 ```c
@@ -214,10 +214,13 @@ z = z * 3;
 
 {% endspoiler %}
 
-
 What will be the final value of z? Uncomment out the printf statement at the end of the section to check. 
 
+#### Pennies
 
+You should now be ready to complete `pennies.c`
 
+Click on the link below to start coding
+    -[pennies_lab](https://lab.cs50.io/cwaage/cs50_labs/unit1/pennies/)
 
 
