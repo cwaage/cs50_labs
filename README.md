@@ -21,8 +21,8 @@ What if you were given more than one penny on that first day? Or the month were 
 
 Implement, in a file called `pennies.c`, a program that first asks the user how many days there are in the month and then asks the user how many pennies he or she will receive on the first day of that month. The program should then calculate the amount that the user will have received in total by the end of the month (**not just on the last day**) if that amount is doubled on every day but the first, expressed not as pennies but as dollars and cents. 
 
-**Note:** If the user does not type in 28, 29, 30, or 31 for the number of days in the month, the program should prompt the user to retry. 
-**Note:** If the user does not input a positive integer for the first day’s number of pennies, the program should prompt the user to retry.
+  - **Note:** If the user does not type in 28, 29, 30, or 31 for the number of days in the month, the program should prompt the user to retry. 
+  - **Note:** If the user does not input a positive integer for the first day’s number of pennies, the program should prompt the user to retry.
 
 For instance, your program might behave as follows. The green text represents user input.
 
@@ -35,12 +35,11 @@ Days in month: <span style="color: green"> 31 </span><br />
 Pennies on first day: <span style="color: green"> 1 </span><br />
 $21474836.47<br />
 
-
-Notice how this output suggests that the program should indeed re-prompt the user if he or she fails to cooperate with these rules (as by inputting too many days).
+Notice how this output suggests that the program should indeed re-prompt the user if he or she fails to cooperate with these rules (by inputting too many days).
 
 #### TODO 0 :
 
-  - Declare two variables specified in the commnets. 
+  - Declare two variables specified in the comments. 
   - Do **not** assign them any values. 
   - Those will be assigned by the user as specified in the following TODO blocks. 
 
@@ -87,7 +86,7 @@ Which loop block is garanteed do execute at least once?
 #### TODO 2 :
 **Create a loop that:**
   - A. Executes at least once
-  - B. Assigns your variable that captures the initial number of pennies from the user input 
+  - B. Assign your variable for the initial number of pennies from the user input 
   - C. Repeats Block (Loops) when the input value is less than 1
 
 {% next TODO 3 %}
