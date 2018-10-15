@@ -200,6 +200,21 @@ First Remove the two lines of code that comment out the section.
 
 Then in your code, create a for loop that repeats 3 times and multiply the z variable by 4 each time through the loop. 
 
+{% spoiler Hint for Updating Value %}
+
+Both of the following multiply z by 3 and then reassign z the result
+
+```c
+z *= z;
+
+```
+```c
+z = z * 3;
+```
+
+{% endspoiler %}
+
+
 What will be the final value of z? Uncomment out the printf statement at the end of the section to check. 
 
 
