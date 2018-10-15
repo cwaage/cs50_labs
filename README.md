@@ -120,7 +120,88 @@ Which loop block is garanteed do execute at least once?
 {% next TODO 5 %}
 
 #### TODO 5 :
-**Print with two decimal places for correct currency format (i.e. '$4.27)**
+**Print with two decimal places for correct currency format (i.e. $4.27)**
 Hopefully you are getting comfortable priting formatted doubles and floats to a specified decimal limit. 
+
+{% next "Compile" %}
+
+#### Compile your program
+When you are done coding the above,  `compile` your program with the `make` command.
+
+```
+  $ make pennies
+```
+
+##### DEBUG
+
+At this point you may see errors reported in the terminal. Don't worry, even expert programmers have to deal with compile errors on most of their programs. 
+Do your best to work through any them. It's always best to start with the first error that is report. Sometimes fixing the first error fixes ALL of them. 
+
+If the C compiler error messages are confusing to you, try using `help50`. This command is programmed by those smart Harvard folks
+to generate more human readable debug and error messages. It can be helpful in pinpointing a problem. Use the command as shown below.
+
+```csh
+$ help50 make pennies
+```
+
+{% next "Running Your Program" %}
+
+#### Run Your Program
+When your code has compiled without errors there will be a new 'executable' file called
+
+**pennies**
+
+You can run the list command at the terminal $ prompt to see all the files in the directory
+
+```
+ls
+```
+
+To run the executable `pennies` file you will type the following at the terminal prompt
+````
+$ ./pennies
+````
+
+{% next "Check, Style and Submit" %}
+
+#### Check
+You can use the 'check50' command as shown below to check if your syntax and function are correct
+
+```
+check50 cs50/2018/ap/pennies
+```
+
+#### Style
+
+Check if you are stylistically correct by usng the 'style50' check below. This does *not* check for
+syntax or other errors. It only checks if your code is inline with expected style requirements (spacing, indentations, etc...).
+
+For Recommended Style Notes visit the following link [CS50 Style Guide](https://cs50.readthedocs.io/style/c/)
+
+```
+style50 pennies.c
+```
+
+#### Submit
+
+After you have checked your style and syntax above you are ready to submit your code.
+You can submit your project directly from the command line as shown below.
+
+```
+submit50 cs50/2018/ap/pennies
+```
+
+You will be prompted for your github credentials (user name/password) and at the end of the process may see a message like the following:
+
+```csh
+Files that will be submitted:
+./pennies.c
+Files that won't be submitted:
+./.bash_history
+./pennies
+Keeping in mind the course's policy on academic honesty, are you sure you want to submit these files (yes/no)?
+```
+
+Type **yes** and you are done! 
 
 
