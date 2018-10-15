@@ -28,12 +28,13 @@ For instance, your program might behave as follows. The bold text represents use
 
 #### Command Line Input/Output 
 
-
+```
 ~/workspace/unit1/pennies/ $ ./pennies
-Days in month: **32**
-Days in month: **31**
-Pennies on first day: **1**
+Days in month: <u>32</u>
+Days in month: 31
+Pennies on first day: 1
 $21474836.47
+```
 
 Notice how this output suggests that the program should indeed re-prompt the user if he or she fails to cooperate with these rules (as by inputting too many days).
 
