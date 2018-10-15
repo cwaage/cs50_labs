@@ -1,9 +1,4 @@
 lab50:
   files:
-    - !include pennies.c
+    - !include practice_lab_1.c
     - !exclude "README.md"
-
-submit50:
-  files: &files
-    - !exclude "*"
-    - !require pennies.c
