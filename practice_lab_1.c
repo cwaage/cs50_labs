@@ -71,7 +71,7 @@ int main (void)
     // ----------------------------------------
     do
     {
- 
+        printf("Only Happens Once");
     } while();
     // ----------------------------------------
     
@@ -81,7 +81,8 @@ int main (void)
     // ----------------------------------------
     while ()
     {
- 
+        // printf
+        // update your control variable 
     }
     // ----------------------------------------
 
@@ -92,7 +93,7 @@ int main (void)
     // Repeat Loop 8 times
     for 
     {
-        printf
+        // printf
     }
 
     REMOVE THIS LINE OF CODE TO UNCOMMENT Loop Section */
