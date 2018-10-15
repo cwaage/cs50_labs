@@ -24,17 +24,17 @@ Implement, in a file called `pennies.c`, a program that first asks the user how 
 **Note:** If the user does not type in 28, 29, 30, or 31 for the number of days in the month, the program should prompt the user to retry. 
 **Note:** If the user does not input a positive integer for the first day’s number of pennies, the program should prompt the user to retry.
 
-For instance, your program might behave as follows. The bold text represents user input.
+For instance, your program might behave as follows. The green text represents user input.
 
 #### Command Line Input/Output 
 
-```
-~/workspace/unit1/pennies/ $ ./pennies
-Days in month: <u>32</u>
-Days in month: 31
-Pennies on first day: 1
-$21474836.47
-```
+
+~/workspace/unit1/pennies/ $ ./pennies<br />
+Days in month: <span style="color: green"> 32 </span><br />
+Days in month: <span style="color: green"> 31 </span><br />
+Pennies on first day: <span style="color: green"> 1 </span><br />
+$21474836.47<br />
+
 
 Notice how this output suggests that the program should indeed re-prompt the user if he or she fails to cooperate with these rules (as by inputting too many days).
 
