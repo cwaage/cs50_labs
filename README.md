@@ -6,12 +6,12 @@ Compile and run after you complete each section to see the results.
 
 Compile
 ```
-make lab_practice_1
+make practice_lab_1
 ```
 
 Run
 ```
-./lab_practice_1
+./practice_lab_1
 ```
 
 ### Conditionals 
