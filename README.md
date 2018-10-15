@@ -3,8 +3,51 @@
 
 ### Conditionals 
 
+Click the button below to see example code.
+
+{% spoiler Conditional Example Code %}
+
+```c
+int num1 = 0;
+int num2 = 5;
+int num3 = 10;
+
+// if block: Execute if num1 > num2 is TRUE 
+if (num1 > num2)
+{
+  // Given the values above does this print?
+  printtf("num1 is greater than num2\n");
+}
+
+// if ... else
+if (num1 > num2) // Execute if num1 > num2 is TRUE 
+{
+  printtf("num1 is greater than num2\n");
+}
+else // Executes when num1 > num2 is FALSE  
+{
+  printtf("num1 is less than or equal to num2\n");
+}
+// if ... else ...  if ... else
+
+if (num1 > num2) // Execute if num1 > num2 is TRUE 
+{
+  printtf("num1 is greater than num2\n");
+}
+else if (num1 > num3) // Executes when num1 > num2 is FALSE  
+{
+  printtf("num1 is greater than num3\n");
+}
+else
+{
+  printtf("num1 is not greater than num2 or num3\n");
+}
+
+```
+{% endspoiler %}
 
 {% next Boolean Operators %}
+
 ### Boolean Operators
 
 ```c
