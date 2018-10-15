@@ -162,6 +162,16 @@ To run the executable `pennies` file you will type the following at the terminal
 $ ./pennies
 ````
 
+Example Program Output below (Green text is user input).
+
+~/workspace/unit1/pennies/ $ ./pennies<br />
+Days in month: <span style="color: green"> 5 </span><br />
+Days in month: <span style="color: green"> 30 </span><br />
+Pennies on first day: <span style="color: green"> 0 </span><br />
+Pennies on first day: <span style="color: green"> 2 </span><br />
+$21474836.46<br />
+
+
 {% next "Check, Style and Submit" %}
 
 #### Check
