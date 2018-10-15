@@ -22,11 +22,11 @@ int main (void)
     {
         printf("num1 is greater than num2\n");
     }
-    // TODO: code 'else if' with proper syntax
+    // Code 'else if' with proper syntax
     
         printf("num2 is greater than num1\n");
     
-    // TODO: code 'else' with proper syntax
+    // Code 'else' with proper syntax
     
         printf("num1 and num2 are equal\n");
         
@@ -109,7 +109,7 @@ int main (void)
     // Create For Loop 
     for
     {
-        // TODO: Code to accumulate Variable 
+        // Code to accumulate Variable 
     }
 
     // TODO Uncomment the code below to print the z variable to display its final value
