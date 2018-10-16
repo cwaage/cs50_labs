@@ -221,6 +221,6 @@ What will be the final value of z? Uncomment out the printf statement at the end
 You should now be ready to complete `pennies.c`
 
 Click on the link below to start coding
-    -[pennies_lab](https://lab.cs50.io/cwaage/cs50_labs/unit1/pennies/)
+    -[pennies_lab](https://lab.cs50.io/cwaage/cs50_labs/unit1/pennies1/)
 
 
