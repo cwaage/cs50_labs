@@ -22,7 +22,7 @@ int main(void)
   // Assign that variable the calculated total number of pennies
   // Note: Use the pow() function from the math.h library in your equation. 
 
-  // TODO 4 : Convert to currancy format
+  // TODO 4 : Convert to $US Dollar currancy format
 
   // TODO 5 : Print with two decimal places for correct currency format (i.e. '$4.27)
 }
