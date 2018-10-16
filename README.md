@@ -56,6 +56,8 @@ step 8          set num_pennies = num_pennies * 2
 step 9  convert number of pennies to dollars
 step 10 display acculuated num_pennies in $ format
 ```
+Note any differences between your pseudo code and the code above. Think about those differences and how they might change the way you create your program. 
+
 {% endspoiler %}
 
 {% next TODO 0 %}
