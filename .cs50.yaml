@@ -1,5 +1,6 @@
 lab50:
   files:
+    - !include pseudocode.txt
     - !include pennies.c
     - !exclude "README.md"
 
