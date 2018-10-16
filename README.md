@@ -37,6 +37,29 @@ $21474836.47<br />
 
 Notice how this output suggests that the program should indeed re-prompt the user if he or she fails to cooperate with these rules (by inputting too many days).
 
+{% next Pseudo Code %}
+
+In the Text File pseudocode.txt write out the steps to complete this assignment.
+When You have completed the process compare your pseudo code to the code hidden
+by the "Spoiler" button below.
+
+{% spoiler Spoiler: Pseudo Code Example %}
+```txt
+step 1  let num_pennies = user input
+step 2  while num_pennies < 1
+step 3          repeat step 1
+step 4  let num_days = user input
+step 5  while num_days < 29 or num_days > 31
+step 6          repeat step 4
+step 7  for each day
+step 8          set num_pennies = num_pennies * 2
+step 9  convert number of pennies to dollars
+step 10 display acculuated num_pennies in $ format
+```
+{% endspoiler %}
+
+{% next TODO 0 %}
+
 #### TODO 0 :
 
   - Declare two variables specified in the comments. 
