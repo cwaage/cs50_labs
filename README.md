@@ -1,5 +1,5 @@
 # cs50_labs
-## ISDN 
+## ISBN 
 
 ### Program Overview
 
@@ -11,7 +11,7 @@ Turns out you can mathmatically check if the ISBN-10 is a legitimate book identi
 
 #### Validating an ISBN
 
-For the long version of how the validation of an ISDN is derived see the Harvard version of this problem [ISBN](https://docs.cs50.net/2018/ap/problems/isbn/isbn.html#readin-bookz).
+For the long version of how the validation of an ISBN is derived see the Harvard version of this problem [ISBN](https://docs.cs50.net/2018/ap/problems/isbn/isbn.html#readin-bookz).
 
 The Short Version (which isn't actually short) goes like this: 
 
@@ -27,8 +27,79 @@ More visually, an ISBN number like 0-789-75198-4 which is the ISBN for the book 
 
 Since 330 % 11 == 0, the number is indeed a legitimate ISBN-10. 
 
-Mathmatically speaking, computing the validation check is not hard, but it does get a bit tedious by hand. 
-If only there was some device we could program to automate the process for us. Hmm ... 
+Mathmatically speaking, validating the number is not hard, but it does get a bit tedious by hand. 
+If only there was some device we could program to automate the process for us. I wonder what that might look like ...
+
+#### Creating Your Program
+
+#### Getting the number from the user
+
+Remember that a signed int has a max value of '2,147,483,647'. Being that ISBN's are 10 digit's in length, it is quite conceivable that you would have an overflow issue with some ISBN's. So which type should you use for your ISBN variable.
+
+```c
+long long
+```
+
+And yes, there is a function programmed for you to use to get a long long value from the user ... 
+
+```c
+get_long_long("Prompt message written to output");
+```
+
+#### Traversing The ISBN: Looping to isolate each digit 
+
+How are you going to get the values for each individual digit? One way is to construct a loop and utilize a couple of tricks to help isolate each digit. 
+
+#### Isolating the each digit in the number
+
+To get the one's place of any number you can use the modulus operator like below
+
+```c
+n % 10
+```
+Where 'n' is any whole number (`int` or `long long`).
+
+**For Example**
+
+```md
+354 % 10 = 4
+```
+
+Because 354 / 10 yields 35 with a remainder of 4.
+
+Great. That get's you one digit, but what about the rest.
+
+Turns out ... your can truncate your number by removing the one's place by dividing the number by 10 as shown below.
+
+```md
+354 / 10 = 35.
+```
+
+Now you can isolate the next digit using the modulus trick described above.
+
+```
+35 % 10 = 5
+```
+
+
+
+
+
+
+
+
+
+##### Getting the One's Digits
+
+##### Reducing the number by one decimal place
+
+##### 
+
+
+
+
+
+Getting the 
 
 
 #### Command Line Input/Output 
