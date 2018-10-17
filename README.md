@@ -30,17 +30,25 @@ Since 330 % 11 == 0, the number is indeed a legitimate ISBN-10.
 Mathmatically speaking, validating the number is not hard, but it does get a bit tedious by hand. 
 If only there was some device we could program to automate the process for us. I wonder what that might look like ...
 
-#### Creating Your Program
+#### Program Overview
+
+Create a file called isbn.c inside ~/workspace/unit1/isbn, in which you should write a program that prompts the user for an ISBN-10 and then reports (via printf) whether the number’s legit. So the automated checks work on your code, your program’s last line of output be either `YES\n` or `NO\n`, nothing more, nothing less.
+
+  * Get ISBN from the user
+  * Isolate each digit in the number and multiply it by it's respective place in the ISBN
+  * Accumulate the sum of each digit's products as visually displayed in the section above
+  * Check if the assumulated sum % 11 is equal to 0
+  * Print "YES" if it is equal to 0
+  * Otherise print "NO"
 
 #### Getting the number from the user
 
-Remember that a signed int has a max value of '2,147,483,647'. Being that ISBN's are 10 digit's in length, it is quite conceivable that you would have an overflow issue with some ISBN's. So which type should you use for your ISBN variable.
+Remember that a signed int has a max value of `2,147,483,647`. Being that ISBN's are 10 digit's in length, it is quite conceivable that you would have an overflow issue with some ISBN's. So which type should you use for your ISBN variable? Double, float, char, or ...
 
 ```c
 long long
 ```
-
-And yes, there is a function programmed for you to use to get a long long value from the user ... 
+There's even a function programmed for you to use to get a long long value from the user ... 
 
 ```c
 get_long_long("Prompt message written to output");
@@ -54,22 +62,21 @@ How are you going to get the values for each individual digit? One way is to con
 
 To get the one's place of any number you can use the modulus operator like below
 
-```c
+```md
 n % 10
 ```
-Where 'n' is any whole number (`int` or `long long`).
+Where `n` is any whole number (`int` or `long long`).
 
 **For Example**
 
 ```md
 354 % 10 = 4
 ```
+Because `354 / 10` yields `35` with a remainder of `4`
 
-Because 354 / 10 yields 35 with a remainder of 4.
+Great. That get's you *one* digit, but what about the rest.
 
-Great. That get's you one digit, but what about the rest.
-
-Turns out ... your can truncate your number by removing the one's place by dividing the number by 10 as shown below.
+Turns out ... your can truncate a number by removing the one's place by dividing that number by 10 as shown below.
 
 ```md
 354 / 10 = 35.
@@ -80,26 +87,19 @@ Now you can isolate the next digit using the modulus trick described above.
 ```
 35 % 10 = 5
 ```
+{% next Next: Constructing The Loop %}
 
+#### The Loop
 
+The key to successfully completing this program is to put some thought into how you construct a loop and update variables. 
 
+##### Hints
 
+  * Your loop should update a couple of variable each time through.
+    * The number you are multiplying each digit by
+    * 
+  
 
-
-
-
-
-##### Getting the One's Digits
-
-##### Reducing the number by one decimal place
-
-##### 
-
-
-
-
-
-Getting the 
 
 
 #### Command Line Input/Output 
@@ -124,9 +124,6 @@ But it’s up to you to catch inputs that are not ISBN-10s, even if ten digits.
 ISBN: <span style="color: brown">5558675309</span><br />
 NO<br />
 <hr />
-
-
-{% next TODO 0 %}
 
 {% next "Compile" %}
 
