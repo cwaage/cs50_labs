@@ -33,15 +33,15 @@ For instance, your program might behave as follows. The red text represents user
 Consider the below representative of how your own program should behave when passed a valid ISBN-10 (sans hyphens); underlined is some user’s input.
 
 ~/workspace/unit1/isbn/ $ ./isbn<br />
-ISBN: <span style="color: red">0789751984</span><br />
+ISBN: <span style="color: green">0789751984</span><br />
 YES<br />
 
 Of course, get_long(“ISBN: “) itself will reject an ISBN-10’s hyphens (and more) anyway:
 
 ~/workspace/unit1/isbn/ $ ./isbn<br />
-ISBN: <span style="color: red">0-789-75198-4</span><br />
-ISBN: <span style="color: red">foo</span><br />
-ISBN: <span style="color: red">0789751984</span><br />
+ISBN: <span style="color: blue">0-789-75198-4</span><br />
+ISBN: <span style="color: orange">foo</span><br />
+ISBN: <span style="color: brown ">0789751984</span><br />
 YES<br />
 
 But it’s up to you to catch inputs that are not ISBN-10s (e.g., Jenny’s[4] phone number), even if ten digits.
