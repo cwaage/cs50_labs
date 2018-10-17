@@ -1,7 +1,9 @@
 # cs50_labs
-## Pennies
+## ISDN 
 
 ### Program Overview
+
+#### ISBN: What are they?
 
 If ever given the choice between $10,000,000 or a month’s worth of pennies, whereby you receive a penny the first day, two pennies the second, four pennies the third, and so forth … take the pennies. 
 
@@ -24,16 +26,29 @@ Implement, in a file called `pennies.c`, a program that first asks the user how 
   - **Note:** If the user does not type in 28, 29, 30, or 31 for the number of days in the month, the program should prompt the user to retry. 
   - **Note:** If the user does not input a positive integer for the first day’s number of pennies, the program should prompt the user to retry.
 
-For instance, your program might behave as follows. The green text represents user input.
+For instance, your program might behave as follows. The red text represents user input.
 
 #### Command Line Input/Output 
 
+Consider the below representative of how your own program should behave when passed a valid ISBN-10 (sans hyphens); underlined is some user’s input.
 
-~/workspace/unit1/pennies/ $ ./pennies<br />
-Days in month: <span style="color: green"> 32 </span><br />
-Days in month: <span style="color: green"> 31 </span><br />
-Pennies on first day: <span style="color: green"> 1 </span><br />
-$21474836.47<br />
+~/workspace/unit1/isbn/ $ ./isbn<br />
+ISBN: <span style="color: red">0789751984</span><br />
+YES<br />
+
+Of course, get_long(“ISBN: “) itself will reject an ISBN-10’s hyphens (and more) anyway:
+
+~/workspace/unit1/isbn/ $ ./isbn<br />
+ISBN: <span style="color: red">0-789-75198-4</span><br />
+ISBN: <span style="color: red">foo</span><br />
+ISBN: <span style="color: red">0789751984</span><br />
+YES<br />
+
+But it’s up to you to catch inputs that are not ISBN-10s (e.g., Jenny’s[4] phone number), even if ten digits.
+
+~/workspace/unit1/isbn/ $ ./isbn<br />
+ISBN: <span style="color: red">5558675309</span><br />
+NO<br />
 
 Notice how this output suggests that the program should indeed re-prompt the user if he or she fails to cooperate with these rules (by inputting too many days).
 
