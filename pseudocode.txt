@@ -1,4 +1,4 @@
-step 1  let num_pennies = user input
+step 1 
 step 2	
 step 3
 ...
