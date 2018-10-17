@@ -11,7 +11,7 @@ Click on Button below to get detailed information on where to code isbn.c
 
 ### Don't Code ISBN In The Sandbox Environment
 
-It is time to transition to coding in the IDE located at [https//:cs50.io](https//:cs50.io)
+It is time to transition to coding in the IDE located at [https://cs50.io](https//:cs50.io)
 
 The Sandbox has been a nice initial coding environment, but it has been a little buggy, and
 it does not allow you retain your files in an organized hierarchy.
@@ -20,7 +20,7 @@ For the ISBN problem do the following:
 
   * Use the step by step instructions located at the left
   * Open another browser window (shortcut command + n)
-  * Navigate to [https//:cs50.io](https//:cs50.io) and login
+  * Navigate to [https://cs50.io](https://cs50.io) and login
   * cd to unit1 
   * mkdir isbn and then cd into isbn
   * create a new file called isbn.c located in the isbn directory
@@ -41,11 +41,11 @@ Turns out you can mathmatically check if the ISBN-10 is a legitimate book identi
 
 For the long version of how the validation of an ISBN is derived see the Harvard version of this problem [ISBN](https://docs.cs50.net/2018/ap/problems/isbn/isbn.html#readin-bookz).
 
-The Short Version (which isn't actually short) goes like this: 
+The Short Version (which isn't actually that short) goes like this: 
 
 To validate an ISBN-10, multiply its first digit by 1, its second digit by 2, its third digit by 3, its fourth digit by 4, its fifth digit by 5, its sixth digit by 6, its seventh digit by 7, its eighth digit by 8, its ninth digit by 9, and it's tenth digit by 10. Take the sum of those products and then divide it by 11. If the remainder is equal to zero then it is a valid IBSN. 
 
-More visually, an ISBN number like 0-789-75198-4 which is the ISBN for the book called *Absolute Beginner’s Guide to C* could be confirmed to be valid by using the steps shown below:
+More visually, an ISBN number like 0-789-75198-4 which is the ISBN for the book called *Absolute Beginner’s Guide to C* could be validated using the steps shown below:
 
 <hr />
 
@@ -58,30 +58,29 @@ Since 330 % 11 == 0, the number is indeed a legitimate ISBN-10.
 Mathmatically speaking, validating the number is not hard, but it does get a bit tedious by hand. 
 If only there was some device we could program to automate the process for us. I wonder what that might look like ...
 
+{% next Program Overview %}
+
 #### Program Overview
 
-Create a file called isbn.c inside ~/workspace/unit1/isbn, in which you should write a program that prompts the user for an ISBN-10 and then reports (via printf) whether the number’s legit. So the automated checks work on your code, your program’s last line of output be either `YES\n` or `NO\n`, nothing more, nothing less.
+Create a file called isbn.c inside ~/workspace/unit1/isbn, in which you should write a program that prompts the user for an ISBN-10 and then reports (via printf) whether the number’s legit. So the automated checks work on your code, your program’s last line of output should be either `YES\n` or `NO\n`, nothing more, nothing less.
 
   * Get ISBN from the user
-  * Isolate each digit in the number and multiply it by it's respective place in the ISBN
-  * Accumulate the sum of each digit's products as visually displayed in the section above
-  * Check if the assumulated sum % 11 is equal to 0
+  * Isolate each digit in the number and multiply it by it's respective order in the ISBN
+  * Accumulate the sum of each digit's products as visually shown in the section above
+  * Check if the accumulated sum % 11 is equal to 0
   * Print "YES" if it is equal to 0
   * Otherise print "NO"
 
 #### Getting the number from the user
 
-Remember that a signed int has a max value of `2,147,483,647`. Being that ISBN's are 10 digit's in length, it is quite conceivable that you would have an overflow issue with some ISBN's. So which type should you use for your ISBN variable? Double, float, char, or ...
-
+Remember that a signed int has a max value of `2,147,483,647`. Being that ISBN's are 10 digit's in length, it is quite conceivable that you would have an overflow issue with some ISBN's. So, which `type` should you use for your ISBN variable? It should be a whole number that stores twice as many bytes as an 'int'. Double, float, char, long long, or string?? (See cryptic and subtle hint below).
 ```c
 long long
 ```
-There's even a function programmed for you to use to get a long long value from the user ... 
-
+There's even a function programmed for you to get a long long value from user input.
 ```c
 get_long_long("Prompt message written to output");
 ```
-
 #### Traversing The ISBN: Looping to isolate each digit 
 
 How are you going to get the values for each individual digit? One way is to construct a loop and utilize a couple of tricks to help isolate each digit. 
@@ -93,52 +92,60 @@ To get the one's place of any number you can use the modulus operator like below
 ```md
 n % 10
 ```
-Where `n` is any whole number (`int` or `long long`).
-
 **For Example**
-
 ```md
 354 % 10 = 4
 ```
-Because `354 / 10` yields `35` with a remainder of `4`
+Because thanks to modular math `354 / 10` yields `35` with a remainder of `4`
 
 Great. That get's you *one* digit, but what about the rest.
 
-Turns out ... your can truncate a number by removing the one's place by dividing that number by 10 as shown below.
+*Turns out* ... your can truncate an `integer` or `long long` by removing the one's place by dividing that number by 10 as shown below.
 
 ```md
 354 / 10 = 35.
 ```
-
 Now you can isolate the next digit using the modulus trick described above.
 
-```
+```md
 35 % 10 = 5
 ```
 {% next Next: Constructing The Loop %}
 
 #### The Loop
 
-The key to successfully completing this program is to put some thought into how you construct a loop and update variables. 
+The key to successfully completing this program is to put some thought into how you construct a loop and update variables within the loop. 
 
 ##### Hints
 
-  * Your loop should update a couple of variable each time through.
-    * The number you are multiplying each digit by
-    * 
+* Your loop needs to repeat so every digit in the ISBN is examined
+* Each time through the loop isolate the one's place using the tricks described above
+* Create a variable that updates each time through the loop to multiply your isolated digit by the apporpriate value
+* Store your accumlated sum in a variable
+
+##### Compile and Test Incrementally
+
+Don't wait until you have attempted to create your entire program to compile and test your code. After you complete each section, perform a compile to check if you have introduced and errors. Then run the program to see if you output is what you expect.
+
+Compile
+```
+  $ make isbn
+```
+Run
+````
+$ ./isbn
+````
   
-
-
-
 #### Command Line Input/Output 
 
-Consider the below representative of how your own program should behave when passed a valid ISBN-10 (sans hyphens); underlined is some user’s input.
+When your program is complete your output should look like the example shown below when passed a valid ISBN-10 (sans hyphens); brown text is some user’s input.
 <hr />
 ~/workspace/unit1/isbn/ $ ./isbn<br />
 ISBN: <span style="color: brown">0789751984</span><br />
 YES<br />
 <hr />
-Of course, get_long(“ISBN: “) itself will reject an ISBN-10’s hyphens (and more) anyway:
+Luckily, get_long(“ISBN: “) will reject an ISBN-10’s hyphens (and more) so you don't have to program a loop to check for non-valid input.
+That function has been abstracted away by the helpful coder of the get_long_long function. 
 <hr />
 ~/workspace/unit1/isbn/ $ ./isbn<br />
 ISBN: <span style="color: brown">0-789-75198-4</span><br />
@@ -146,7 +153,7 @@ ISBN: <span style="color: brown">foo</span><br />
 ISBN: <span style="color: brown ">0789751984</span><br />
 YES<br />
 <hr />
-But it’s up to you to catch inputs that are not ISBN-10s, even if ten digits.
+But it’s up to you to catch inputs that are not ISBN-10s, even if it is ten digits.
 <hr />
 ~/workspace/unit1/isbn/ $ ./isbn<br />
 ISBN: <span style="color: brown">5558675309</span><br />
