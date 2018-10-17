@@ -18,8 +18,4 @@ For the ISBN problem do the following:
   * open isbn.c in your IDE code editor window
   * With the Step by Step instructions open next your new window create your code
   * Remember in the IDE you need to save (shortcut: command + s ) your work before you compile it
-  * Happy Coding! 
-
-
-
-
+  * Happy Coding!
