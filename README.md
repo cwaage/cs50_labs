@@ -65,7 +65,7 @@ Let's recreate that pyramid in C, albeit in text, using hashes (`#`) for bricks,
 #########
 ```
 
-The program we'll write will be called `mario`. And let's allow the user to decide just how tall the pyramid should be by first prompting them for a positive integer between, say, 0 and 23, inclusive. 
+The program we'll write will be called `mario`. And let's allow the user to decide just how tall the pyramid should be by first prompting them for an integer between 0 and 23, inclusive. 
 
 Here's how the program might work if the user inputs `8` when prompted:
 
@@ -110,7 +110,7 @@ Height: 1
 ##
 ```
 
-If the user doesn't, in fact, input a positive integer between 0 and 23, inclusive, when prompted, the program should re-prompt the user until they cooperate:
+If the user doesn't, in fact, input an integer between 0 and 23, inclusive, when prompted, the program should re-prompt the user until they cooperate:
 
 ```
 $ ./mario
@@ -200,8 +200,7 @@ Modify `mario.c` at right such that it no longer simply prints the user's input 
 {% spoiler "Hints" %}
 
 * Keep in mind that a hash is just a character like any other, so you can print it with `printf`.
-* Just as Scratch has a [Repeat](https://cdn.cs50.net/2018/fall/lectures/0/lecture0.pdf) block, so does C have a [`for`](https://cdn.cs50.net/2018/fall/lectures/1/lecture1.pdf) loop, via which you can iterate some number times. Perhaps on each iteration, *i*, you could print that many hashes?
-* You can actually "nest" loops, iterating with one variable (e.g., `i`) in the "outer" loop and another (e.g., `j`) in the "inner" loop. For instance, here's how you might print a square of height and width `n`, below. Of course, it's not a square that you want to print!
+* You can actually "nest" loops, iterating with one variable (e.g., `i`) in the "outer" loop and another (e.g., `j`) in the "inner" loop. For instance, here's how you might print a square of height and width `n`, below. Of course, it's not a square that you want to print.
 
     ```
     for (int i = 0; i < n; i++)
@@ -276,18 +275,7 @@ A space is just a press of your space bar, just as a period is just a press of i
 * Take care to align the bottom-left corner of your half-pyramid with the left-hand edge of your terminal window.
 
 
-##### Compile and Test Incrementally
 
-Don't wait until you have attempted to create your entire program to compile and test your code. After you complete each section, perform a compile to check if you have introduced and errors. Then run the program to see if you output is what you expect.
-
-Compile
-```
-  $ make mario
-```
-Run
-````
-$ ./mario
-````
 
 {% next "Compile" %}
 
