@@ -263,20 +263,6 @@ A space is just a press of your space bar, just as a period is just a press of i
 
 {% endspoiler %}
 
-{% next %}
-
-
-### Specification
-
-* Write, in a file called mario.c in your ~/workspace/unit1/mario/ directory, a program that recreates this half-pyramid using hashes (#) for blocks.
-* To make things more interesting, first prompt the user for the half-pyramid’s height, a non-negative integer no greater than 23. (The height of the half-pyramid pictured above happens to be 8.)
-* If the user fails to provide a non-negative integer no greater than 23, you should re-prompt for the same again.
-* Then, generate (with the help of printf and one or more loops) the desired half-pyramid.
-* Take care to align the bottom-left corner of your half-pyramid with the left-hand edge of your terminal window.
-
-
-
-
 {% next "Compile" %}
 
 #### Compile your program
@@ -288,11 +274,9 @@ When you are done coding the above,  `compile` your program with the `make` comm
 
 ##### DEBUG
 
-At this point you may see errors reported in the terminal. Don't worry, even expert programmers have to deal with compile errors on most of their programs. 
-Do your best to work through any them. It's always best to start with the first error that is report. Sometimes fixing the first error fixes ALL of them. 
-
-If the C compiler error messages are confusing to you, try using `help50`. This command is programmed by those smart Harvard folks
-to generate more human readable debug and error messages. It can be helpful in pinpointing a problem. Use the command as shown below.
+You know by now that you will almost certainly experience errors when compiling. 
+Do your best to work through the errors. Read the line numbers reported in the errors and go to the code and see what is coded on that line. It's always best to start with the **first** error that is reported. Sometimes fixing the first error fixes ALL of them. 
+Remember to use `help50` as below if the error messages aren't clear. 
 
 ```csh
 $ help50 make mario
