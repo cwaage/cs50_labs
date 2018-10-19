@@ -155,8 +155,8 @@ When you are done coding the above,  `compile` your program with the `make` comm
 
 ##### DEBUG
 
-At this point you may see errors reported in the terminal. Don't worry, even expert programmers have to deal with compile errors on most of their programs. 
-Do your best to work through any them. It's always best to start with the first error that is report. Sometimes fixing the first error fixes ALL of them. 
+You know now that you will almost certainly experience errors when compiling. 
+Do your best to work through any them. Read the line number in the error and go to the code and see what you have created on that line.   It's always best to start with the **first** error that is reported. Sometimes fixing the first error fixes ALL of them. 
 
 If the C compiler error messages are confusing to you, try using `help50`. This command is programmed by those smart Harvard folks
 to generate more human readable debug and error messages. It can be helpful in pinpointing a problem. Use the command as shown below.
