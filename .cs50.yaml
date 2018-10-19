@@ -1,10 +1,10 @@
 lab50:
   files:
     - !include pseudocode.txt
-    - !exclude isbn.c
+    - !exclude mario.c
     - !exclude "README.md"
 
 submit50:
   files: &files
     - !exclude "*"
-    - !require isbn.c
+    - !require mario.c
