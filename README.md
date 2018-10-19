@@ -264,7 +264,7 @@ Modify `mario.c` in such a way that it does exactly that!
 
 {% spoiler "Hint" %}
 
-Notice how the number of dots needed on each line is the "opposite" of the number of that line's hashes. For a pyramid of height 8, like the above, the first line has but 2 hash and 7 dots. The bottom line, meanwhile, has 9 hashes and thus 0 dots. Via what formula (or arithmetic, really) could you print that many dots?
+Notice how the number of dots needed on each line is "inversely proportional" to the number of that line's hashes. For a pyramid of height 8, like the above, the first line has but 2 hash and 7 dots. The bottom line, meanwhile, has 9 hashes and 0 dots. Via what formula (or arithmetic, really) could you print that many dots?
 
 {% endspoiler %}
 
