@@ -31,97 +31,246 @@ To setup the directoy do the following:
 
 {% endspoiler %}
 
-#### ISBN: What are they?
+{% video https://www.youtube.com/watch?v=C-5-22ZvW40 %}
 
-As you may know, most any book that you borrow or buy has an International Standard Book Number, otherwise known as an ISBN or ISBN-10, "a 10-digit number that uniquely identifies books and book-like products published internationally." Books published since 2007 might also have an ISBN-13, a 13-digit number with a similar purpose, but never mind those.
+This 7ish minute video is the Walkthrough for this assignment. 
+It covers the basics of what you need to know and do to complete it. 
 
-Turns out you can mathmatically check if the ISBN-10 is a legitimate book identifier or if it's just a random phone number like the high school's, 3603762287.
+{% next %}
 
-#### Validating an ISBN
+## World 1-1
 
-For the long version of how the validation of an ISBN is derived see the Harvard version of this problem [ISBN](https://docs.cs50.net/2018/ap/problems/isbn/isbn.html#readin-bookz).
+Toward the end of World 1-1 in Nintendo's Super Mario Brothers, Mario must ascend right-aligned pyramid of blocks, a la the below.
 
-The Short Version (which isn't actually that short) goes like this: 
+![screenshot of Mario jumping up a right-aligned pyramid](pyramid.png)
 
-To validate an ISBN-10, multiply its first digit by 1, its second digit by 2, its third digit by 3, its fourth digit by 4, its fifth digit by 5, its sixth digit by 6, its seventh digit by 7, its eighth digit by 8, its ninth digit by 9, and it's tenth digit by 10. Take the sum of those products and then divide it by 11. If the remainder is equal to zero then it is a valid IBSN. 
+Let's recreate that pyramid in C, albeit in text, using hashes (`#`) for bricks, a la the below. Each hash is a bit taller than it is wide, so the pyramid itself is also be taller than it is wide.
 
-More visually, an ISBN number like 0-789-75198-4 which is the ISBN for the book called *Absolute Beginner’s Guide to C* could be validated using the steps shown below:
-
-<hr />
-
-**1**·0 + **2**·7 + **3**·8 + **4**·9 + **5**·7 + **6**·5 + **7**·1 + **8**·9 + **9**·8 + **10**·4 = 330
-
-<hr />
-
-Since 330 % 11 == 0, the number is indeed a legitimate ISBN-10. 
-
-Mathmatically speaking, validating the number is not hard, but it does get a bit tedious by hand. 
-If only there was some device we could program to automate the process for us. I wonder what that might look like ...
-
-{% next Program Overview %}
-
-#### Program Overview
-
-Create a file called isbn.c inside ~/workspace/unit1/isbn, in which you should write a program that prompts the user for an ISBN-10 and then reports (via printf) whether the number’s legit. So the automated checks work on your code, your program’s last line of output should be either `YES\n` or `NO\n`, nothing more, nothing less.
-
-  * Get ISBN from the user
-  * Isolate each digit in the number and multiply it by it's respective order in the ISBN
-  * Accumulate the sum of each digit's products as visually shown in the section above
-  * Check if the accumulated sum % 11 is equal to 0
-  * Print "YES" if it is equal to 0
-  * Otherise print "NO"
-
-#### Getting the number from the user
-
-Remember that a signed int has a max value of `2,147,483,647`. Being that ISBN's are 10 digit's in length, it is quite conceivable that you would have an overflow issue with some ISBN's. So, which `type` should you use for your ISBN variable? It should be a whole number that stores twice as many bytes as an 'int'. Double, float, char, long long, or string?? (See cryptic and subtle hint below).
-```c
-long long
 ```
-There's even a function programmed for you to get a long long value from user input.
-```c
-get_long_long("Prompt message written to output");
+       ##
+      ###
+     ####
+    #####
+   ######
+  #######
+ ########
+#########
 ```
-#### Traversing The ISBN: Looping to isolate each digit 
 
-How are you going to get the values for each individual digit? One way is to construct a loop and utilize a couple of tricks to help isolate each digit. 
+The program we'll write will be called `mario`. And let's allow the user to decide just how tall the pyramid should be by first prompting them for a positive integer between, say, 1 and 8, inclusive. 
 
-#### Isolating the each digit in the number
+Here's how the program might work if the user inputs `8` when prompted:
 
-To get the one's place of any number you can use the modulus operator like below
-
-```md
-n % 10
 ```
-**For Example**
-```md
-354 % 10 = 4
+$ ./mario
+Height: 8
+       ##
+      ###
+     ####
+    #####
+   ######
+  #######
+ ########
+#########
 ```
-Because thanks to modular math `354 / 10` yields `35` with a remainder of `4`
 
-Great. That get's you *one* digit, but what about the rest.
+Here's how the program might work if the user inputs `4` when prompted:
 
-*Turns out* ... your can truncate an `integer` or `long long` by removing the one's place by dividing that number by 10 as shown below.
-
-```md
-354 / 10 = 35.
 ```
-Now you can isolate the next digit using the modulus trick described above.
-
-```md
-35 % 10 = 5
+$ ./mario
+Height: 4
+   ##
+  ###
+ ####
+#####
 ```
-{% next Next: Constructing The Loop %}
 
-#### The Loop
+Here's how the program might work if the user inputs `2` when prompted:
 
-The key to successfully completing this program is to put some thought into how you construct a loop and update variables within the loop. 
+```
+$ ./mario
+Height: 2
+ ##
+###
+```
 
-##### Hints
+And here's how the program might work if the user inputs `1` when prompted:
 
-* Your loop needs to repeat so every digit in the ISBN is examined
-* Each time through the loop isolate the one's place using the tricks described above
-* Create a variable that updates each time through the loop to multiply your isolated digit by the apporpriate value
-* Store your accumlated sum in a variable
+```
+$ ./mario
+Height: 1
+##
+```
+
+If the user doesn't, in fact, input a positive integer between 1 and 8, inclusive, when prompted, the program should re-prompt the user until they cooperate:
+
+```
+$ ./mario
+Height: -1
+Height: 42
+Height: 50
+Height: 4
+   ##
+  ###
+ ####
+#####
+```
+
+{% spoiler "Try It" %}
+
+To try out the staff's implementation of this problem, execute by copying and pasting
+the entire path below into the terminal command line 
+
+```
+~cs50/unit1/mario/less
+```
+
+{% endspoiler %}
+
+## Pseudocode
+
+First, write in `pseudocode.txt` at right some pseudocode that implements this program, even if not (yet!) sure how to write it in code. There's no one right way to write pseudocode, but short English sentences suffice. Recall how we wrote pseudocode for [finding Mike Smith](https://cdn.cs50.net/2018/fall/lectures/0/lecture0.pdf). Odds are your pseudocode will use (or imply using!) one or more functions, conditions, Boolean expressions, loops, and/or variables.
+
+{% spoiler %}
+
+There's more than one way to do this, so here's just one!
+
+1. Prompt user for height
+1. If height is less than 1 or greater than 8 (or not an integer at all), go back one step</li>
+1. Iterate from 1 through height:
+    1. On iteration *i*, print *i* hashes and then a newline
+
+It's okay to edit your own after seeing this pseudocode here, but don't simply copy/paste ours into your own!
+
+{% endspoiler %}
+
+{% next %}
+
+## Prompting for Input
+
+Whatever your pseudocode, let's first write only the C code that prompts (and re-prompts, as needed) the user for input. 
+
+Specifically, modify `mario.c` at right in such a way that it prompts the user for the pyramid's height, storing their input in a variable, re-prompting the user again and again as needed if their input is not a positive integer between 1 and 8, inclusive. Then, simply print the value of that variable, thereby confirming (for yourself) that you've indeed stored the user's input successfully, a la the below.
+
+```
+$ ./mario
+Height: -1
+Height: 0
+Height: 42
+Height: 50
+Height: 4
+Stored: 4
+```
+
+{% spoiler "Hints" %}
+
+* Recall that you can compile your program with `make`.
+* Recall that you can print an `int` with `printf` using `%i`.
+* Recall that you can get an integer from the user with `get_int`.
+* Recall that `get_int` is declared in `cs50.h`.
+* Recall that we prompted the user for a positive integer in class via [`positive.c`](https://sandbox.cs50.io/b56865fd-c861-425f-aad7-4adcf6831139).
+
+{% endspoiler %}
+
+## Building the Opposite
+
+Now that your program is (hopefully!) accepting input as prescribed, it's time for another step.
+
+It turns out it's a bit easier to build a left-aligned pyramid than right-, a la the below.
+
+```
+#
+##
+###
+####
+#####
+######
+#######
+########
+```
+
+So let's build a left-aligned pyramid first and then, once that's working, right-align it instead!
+
+Modify `mario.c` at right such that it no longer simply prints the user's input but instead prints a left-aligned pyramid of that height.
+
+{% spoiler "Hints" %}
+
+* Keep in mind that a hash is just a character like any other, so you can print it with `printf`.
+* Just as Scratch has a [Repeat](https://cdn.cs50.net/2018/fall/lectures/0/lecture0.pdf) block, so does C have a [`for`](https://cdn.cs50.net/2018/fall/lectures/1/lecture1.pdf) loop, via which you can iterate some number times. Perhaps on each iteration, *i*, you could print that many hashes?
+* You can actually "nest" loops, iterating with one variable (e.g., `i`) in the "outer" loop and another (e.g., `j`) in the "inner" loop. For instance, here's how you might print a square of height and width `n`, below. Of course, it's not a square that you want to print!
+
+    ```
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("#");
+        }
+        printf("\n");
+    }
+    ```
+
+{% endspoiler %}
+
+{% next %}
+
+## Right-Aligning with Dots
+
+Let's now right-align that pyramid by pushing its hashes to the right by prefixing them with dots (i.e., periods), a la the below.
+
+```
+.......#
+......##
+.....###
+....####
+...#####
+..######
+.#######
+########
+```
+
+Modify `mario.c` in such a way that it does exactly that!
+
+{% spoiler "Hint" %}
+
+Notice how the number of dots needed on each line is the "opposite" of the number of that line's hashes. For a pyramid of height 8, like the above, the first line has but 1 hash and thus 7 dots. The bottom line, meanwhile, has 8 hashes and thus 0 dots. Via what formula (or arithmetic, really) could you print that many dots?
+
+{% endspoiler %}
+
+### How to Test Your Code
+
+Does your code work as prescribed when you input
+
+* `-1` (or other negative numbers)?
+* `0`?
+* `1` through `8`?
+* `9` or other positive numbers?
+* letters or words?
+* no input at all, when you only hit Enter?
+
+{% next %}
+
+## Removing the Dots
+
+All that remains now is a finishing flourish! Modify `mario.c` in such a way that it prints spaces instead of those dots!
+
+{% spoiler "Hint" %}
+
+A space is just a press of your space bar, just as a period is just a press of its key! Just remember that `printf` requires that you surround both with double quotes!
+
+{% endspoiler %}
+
+{% next %}
+
+
+### Specification
+
+* Write, in a file called mario.c in your ~/workspace/unit1/mario/ directory, a program that recreates this half-pyramid using hashes (#) for blocks.
+* To make things more interesting, first prompt the user for the half-pyramid’s height, a non-negative integer no greater than 23. (The height of the half-pyramid pictured above happens to be 8.)
+* If the user fails to provide a non-negative integer no greater than 23, you should re-prompt for the same again.
+* Then, generate (with the help of printf and one or more loops) the desired half-pyramid.
+* Take care to align the bottom-left corner of your half-pyramid with the left-hand edge of your terminal window.
+
 
 ##### Compile and Test Incrementally
 
@@ -129,36 +278,12 @@ Don't wait until you have attempted to create your entire program to compile and
 
 Compile
 ```
-  $ make isbn
+  $ make mario
 ```
 Run
 ````
-$ ./isbn
+$ ./mario
 ````
-  
-#### Command Line Input/Output 
-
-When your program is complete your output should look like the example shown below when passed a valid ISBN-10 (sans hyphens); brown text is some user’s input.
-<hr />
-~/workspace/unit1/isbn/ $ ./isbn<br />
-ISBN: <span style="color: brown">0789751984</span><br />
-YES<br />
-<hr />
-Luckily, get_long(“ISBN: “) will reject an ISBN-10’s hyphens (and more) so you don't have to program a loop to check for non-valid input.
-That function has been abstracted away by the helpful coder of the get_long_long function. 
-<hr />
-~/workspace/unit1/isbn/ $ ./isbn<br />
-ISBN: <span style="color: brown">0-789-75198-4</span><br />
-ISBN: <span style="color: brown">foo</span><br />
-ISBN: <span style="color: brown ">0789751984</span><br />
-YES<br />
-<hr />
-But it’s up to you to catch inputs that are not ISBN-10s, even if it is ten digits.
-<hr />
-~/workspace/unit1/isbn/ $ ./isbn<br />
-ISBN: <span style="color: brown">5558675309</span><br />
-NO<br />
-<hr />
 
 {% next "Compile" %}
 
@@ -166,7 +291,7 @@ NO<br />
 When you are done coding the above,  `compile` your program with the `make` command.
 
 ```
-  $ make isbn
+  $ make mario
 ```
 
 ##### DEBUG
@@ -178,7 +303,7 @@ If the C compiler error messages are confusing to you, try using `help50`. This 
 to generate more human readable debug and error messages. It can be helpful in pinpointing a problem. Use the command as shown below.
 
 ```csh
-$ help50 make isbn
+$ help50 make mario
 ```
 
 {% next "Running Your Program" %}
@@ -186,11 +311,11 @@ $ help50 make isbn
 #### Run Your Program
 When your code has compiled without errors there will be a new 'executable' file called
 
-**isbn**
+**mario**
 
 To run the executable `isbn` file you will type the following at the terminal prompt
 ````
-$ ./isbn
+$ ./mario
 ````
 
 {% next "Check, Style and Submit" %}
@@ -199,7 +324,7 @@ $ ./isbn
 You can use the 'check50' command as shown below to check if your syntax and function are correct
 
 ```
-check50 cs50/2018/ap/isbn
+check50 cs50/2018/ap/mario/less
 ```
 
 #### Style
@@ -210,7 +335,7 @@ syntax or other errors. It only checks if your code is inline with expected styl
 For Recommended Style Notes visit the following link [CS50 Style Guide](https://cs50.readthedocs.io/style/c/)
 
 ```
-style50 isbn.c
+style50 mario.c
 ```
 
 #### Submit
@@ -219,6 +344,6 @@ After you have checked your style and syntax above you are ready to submit your 
 You can submit your project directly from the command line as shown below.
 
 ```
-submit50 cs50/2018/ap/isbn
+submit50 cs50/2018/ap/mario/less
 ```
 
