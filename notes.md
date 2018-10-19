@@ -1,14 +1,13 @@
 # Mario 
 
-## Don't Code ISBN In The Sandbox Environment
+## Don't Code Mario In The Sandbox
 
-Don't Code Mario In The Sandbox
 We are transitioning to coding in the IDE located at https://cs50.io
 
 In the IDE environment you will create your code and run it in a directory that you will create. 
 The path to the location will be ~workspace/unit1/mario
 
-To setup the directoy do the following:
+To setup the directory do the following:
 
 * Open another browser window (shortcut command + n)
 * Navigate to https://cs50.io and login
