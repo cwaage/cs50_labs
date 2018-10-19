@@ -6,7 +6,7 @@
 
 Click on Button below to get detailed information on where to code mario.c
 
-{% spoiler Where To Code Mario %}
+{% spoiler "Where To Code Mario" %}
 
 # Mario 
 
