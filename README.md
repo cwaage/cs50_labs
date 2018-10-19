@@ -36,7 +36,15 @@ To setup the directoy do the following:
 This 7ish minute video is the Walkthrough for this assignment. 
 It covers the basics of what you need to know and do to complete it. 
 
-{% next %}
+{% next A Step-By-Step Guide %}
+
+### Specification
+
+* Write, in a file called mario.c in your ~/workspace/unit1/mario/ directory, a program that recreates this half-pyramid using hashes (#) for blocks.
+* To make things more interesting, first prompt the user for the half-pyramid’s height, a non-negative integer no greater than 23. (The height of the half-pyramid pictured in image below happens to be 8.)
+* If the user fails to provide a non-negative integer no greater than 23, you should re-prompt for the same again.
+* Then, generate (with the help of printf and one or more loops) the desired half-pyramid.
+* Take care to align the bottom-left corner of your half-pyramid with the left-hand edge of your terminal window.
 
 ## World 1-1
 
@@ -57,7 +65,7 @@ Let's recreate that pyramid in C, albeit in text, using hashes (`#`) for bricks,
 #########
 ```
 
-The program we'll write will be called `mario`. And let's allow the user to decide just how tall the pyramid should be by first prompting them for a positive integer between, say, 1 and 8, inclusive. 
+The program we'll write will be called `mario`. And let's allow the user to decide just how tall the pyramid should be by first prompting them for a positive integer between, say, 0 and 23, inclusive. 
 
 Here's how the program might work if the user inputs `8` when prompted:
 
@@ -102,7 +110,7 @@ Height: 1
 ##
 ```
 
-If the user doesn't, in fact, input a positive integer between 1 and 8, inclusive, when prompted, the program should re-prompt the user until they cooperate:
+If the user doesn't, in fact, input a positive integer between 0 and 23, inclusive, when prompted, the program should re-prompt the user until they cooperate:
 
 ```
 $ ./mario
@@ -129,7 +137,7 @@ the entire path below into the terminal command line
 
 ## Pseudocode
 
-First, write in `pseudocode.txt` at right some pseudocode that implements this program, even if not (yet!) sure how to write it in code. There's no one right way to write pseudocode, but short English sentences suffice. Recall how we wrote pseudocode for [finding Mike Smith](https://cdn.cs50.net/2018/fall/lectures/0/lecture0.pdf). Odds are your pseudocode will use (or imply using!) one or more functions, conditions, Boolean expressions, loops, and/or variables.
+First, write in `pseudocode.txt` at right some pseudocode that implements this program, even if not (yet!) sure how to write it in code. There's no one right way to write pseudocode, but short English sentences suffice. Odds are your pseudocode will use (or imply using!) one or more functions, conditions, Boolean expressions, loops, and/or variables.
 
 {% spoiler %}
 
@@ -148,14 +156,13 @@ It's okay to edit your own after seeing this pseudocode here, but don't simply c
 
 ## Prompting for Input
 
-Whatever your pseudocode, let's first write only the C code that prompts (and re-prompts, as needed) the user for input. 
+Whatever your pseudocode, let's first write **only** the C code that prompts (and re-prompts, as needed) the user for input. 
 
-Specifically, modify `mario.c` at right in such a way that it prompts the user for the pyramid's height, storing their input in a variable, re-prompting the user again and again as needed if their input is not a positive integer between 1 and 8, inclusive. Then, simply print the value of that variable, thereby confirming (for yourself) that you've indeed stored the user's input successfully, a la the below.
+Specifically, modify `mario.c` in such a way that it prompts the user for the pyramid's height, storing their input in a variable, re-prompting the user again and again as needed if their input is not a non-negative integer less than 24. Then, simply print the value of that variable, thereby confirming (for yourself) that you've indeed stored the user's input successfully, a la the below.
 
 ```
 $ ./mario
 Height: -1
-Height: 0
 Height: 42
 Height: 50
 Height: 4
@@ -168,7 +175,6 @@ Stored: 4
 * Recall that you can print an `int` with `printf` using `%i`.
 * Recall that you can get an integer from the user with `get_int`.
 * Recall that `get_int` is declared in `cs50.h`.
-* Recall that we prompted the user for a positive integer in class via [`positive.c`](https://sandbox.cs50.io/b56865fd-c861-425f-aad7-4adcf6831139).
 
 {% endspoiler %}
 
@@ -179,7 +185,6 @@ Now that your program is (hopefully!) accepting input as prescribed, it's time f
 It turns out it's a bit easier to build a left-aligned pyramid than right-, a la the below.
 
 ```
-#
 ##
 ###
 ####
@@ -188,7 +193,6 @@ It turns out it's a bit easier to build a left-aligned pyramid than right-, a la
 #######
 ########
 ```
-
 So let's build a left-aligned pyramid first and then, once that's working, right-align it instead!
 
 Modify `mario.c` at right such that it no longer simply prints the user's input but instead prints a left-aligned pyramid of that height.
@@ -219,21 +223,21 @@ Modify `mario.c` at right such that it no longer simply prints the user's input 
 Let's now right-align that pyramid by pushing its hashes to the right by prefixing them with dots (i.e., periods), a la the below.
 
 ```
-.......#
-......##
-.....###
-....####
-...#####
-..######
-.#######
-########
+.......##
+......###
+.....####
+....#####
+...######
+..#######
+.########
+#########
 ```
 
 Modify `mario.c` in such a way that it does exactly that!
 
 {% spoiler "Hint" %}
 
-Notice how the number of dots needed on each line is the "opposite" of the number of that line's hashes. For a pyramid of height 8, like the above, the first line has but 1 hash and thus 7 dots. The bottom line, meanwhile, has 8 hashes and thus 0 dots. Via what formula (or arithmetic, really) could you print that many dots?
+Notice how the number of dots needed on each line is the "opposite" of the number of that line's hashes. For a pyramid of height 8, like the above, the first line has but 2 hash and thus 7 dots. The bottom line, meanwhile, has 9 hashes and thus 0 dots. Via what formula (or arithmetic, really) could you print that many dots?
 
 {% endspoiler %}
 
@@ -243,8 +247,8 @@ Does your code work as prescribed when you input
 
 * `-1` (or other negative numbers)?
 * `0`?
-* `1` through `8`?
-* `9` or other positive numbers?
+* `1` through `23`?
+* `24` or other positive numbers?
 * letters or words?
 * no input at all, when you only hit Enter?
 
