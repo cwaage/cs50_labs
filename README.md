@@ -224,6 +224,22 @@ Modify `mario.c` in the IDE such that it no longer simply prints the user's inpu
         printf("\n");
     }
     ```
+Example output where `n = 2`
+
+      ```
+      ##
+      ##
+      ```
+
+Example output where `n = 5`
+
+      ```
+      #####
+      #####
+      #####
+      #####
+      #####
+      ```
 
 {% endspoiler %}
 
