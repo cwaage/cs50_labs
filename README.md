@@ -31,7 +31,7 @@ To setup the directoy do the following:
 
 {% endspoiler %}
 
-{% video https://www.youtube.com/watch?v=C-5-22ZvW40 %}
+{% video https://www.youtube.com/watch?v=EGWRG5e1O2s %}
 
 This 7ish minute video is the Walkthrough for this assignment. 
 It covers the basics of what you need to know and do to complete it. 
@@ -50,7 +50,7 @@ It covers the basics of what you need to know and do to complete it.
 
 Toward the end of World 1-1 in Nintendo's Super Mario Brothers, Mario must ascend right-aligned pyramid of blocks, a la the below.
 
-![screenshot of Mario jumping up a right-aligned pyramid](pyramid.png)
+![screenshot of Mario jumping up a right-aligned pyramid](half_pyramid.png)
 
 Let's recreate that pyramid in C, albeit in text, using hashes (`#`) for bricks, a la the below. Each hash is a bit taller than it is wide, so the pyramid itself is also be taller than it is wide.
 
@@ -110,6 +110,14 @@ Height: 1
 ##
 ```
 
+And here's how the program might work if the user inputs `0` when prompted:
+
+```
+$ ./mario
+Height: 0
+```
+
+
 If the user doesn't, in fact, input an integer between 0 and 23, inclusive, when prompted, the program should re-prompt the user until they cooperate:
 
 ```
@@ -127,7 +135,7 @@ Height: 4
 {% spoiler "Try It" %}
 
 To try out the staff's implementation of this problem, execute by copying and pasting
-the entire path below into the terminal command line 
+the entire path below (including the tilde `~` into the terminal command line 
 
 ```
 ~cs50/unit1/mario/less
@@ -137,18 +145,22 @@ the entire path below into the terminal command line
 
 ## Pseudocode
 
-First, write in `pseudocode.txt` at right some pseudocode that implements this program, even if not (yet!) sure how to write it in code. There's no one right way to write pseudocode, but short English sentences suffice. Odds are your pseudocode will use (or imply using!) one or more functions, conditions, Boolean expressions, loops, and/or variables.
+**Don't Skip this step!**
+
+I know you want to get some code into the editor, but this step really can help you focus on creating an algorithm that will convert into working code. 
+
+First, on a piece of paper write some pseudocode that implements this program, even if not (yet!) sure how to write it in code. There's no one right way to write pseudocode, but short English sentences suffice. Odds are your pseudocode will use (or imply using!) one or more functions, conditions, Boolean expressions, loops, and/or variables.
 
 {% spoiler %}
 
-There's more than one way to do this, so here's just one!
+There's more than one way to do this, so here's just one.
 
 1. Prompt user for height
-1. If height is less than 1 or greater than 8 (or not an integer at all), go back one step</li>
-1. Iterate from 1 through height:
-    1. On iteration *i*, print *i* hashes and then a newline
+1. If height is less than 0 or greater than 23 (or not an integer at all), go back one step
+1. Iterate from 0 through height-1 (using `zero indexing`):
+    1. On iteration *i*, print *i+2* hashes and then a newline
 
-It's okay to edit your own after seeing this pseudocode here, but don't simply copy/paste ours into your own!
+It's okay to edit your own after seeing this pseudocode here.
 
 {% endspoiler %}
 
@@ -195,7 +207,7 @@ It turns out it's a bit easier to build a left-aligned pyramid than right-, a la
 ```
 So let's build a left-aligned pyramid first and then, once that's working, right-align it instead!
 
-Modify `mario.c` at right such that it no longer simply prints the user's input but instead prints a left-aligned pyramid of that height.
+Modify `mario.c` in the IDE such that it no longer simply prints the user's input but instead prints a left-aligned pyramid of that height.
 
 {% spoiler "Hints" %}
 
@@ -236,7 +248,7 @@ Modify `mario.c` in such a way that it does exactly that!
 
 {% spoiler "Hint" %}
 
-Notice how the number of dots needed on each line is the "opposite" of the number of that line's hashes. For a pyramid of height 8, like the above, the first line has but 2 hash and thus 7 dots. The bottom line, meanwhile, has 9 hashes and thus 0 dots. Via what formula (or arithmetic, really) could you print that many dots?
+Notice how the number of dots needed on each line is the "opposite" of the number of that line's hashes. For a pyramid of height 8, like the above, the first line has but 2 hash and 7 dots. The bottom line, meanwhile, has 9 hashes and thus 0 dots. Via what formula (or arithmetic, really) could you print that many dots?
 
 {% endspoiler %}
 
