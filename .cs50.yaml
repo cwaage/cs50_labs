@@ -1,8 +1,9 @@
 lab50:
   files:
-    - !include pseudocode.txt
+    - !exclude pseudocode.txt
     - !exclude mario.c
     - !exclude "README.md"
+    - !include "notes.md"
 
 submit50:
   files: &files
