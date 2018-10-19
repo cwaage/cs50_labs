@@ -31,10 +31,11 @@ To setup the directoy do the following:
 
 {% endspoiler %}
 
-{% video https://www.youtube.com/watch?v=EGWRG5e1O2s %}
-
-This 7ish minute video is the Walkthrough for this assignment. 
+To prepare for the assignment watch the 7:44 minute walkthrough video below.
 It covers the basics of what you need to know and do to complete it. 
+Then use the Step-By-Step guide to work through the code. 
+
+{% video https://www.youtube.com/watch?v=EGWRG5e1O2s %}
 
 {% next A Step-By-Step Guide %}
 
