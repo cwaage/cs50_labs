@@ -31,8 +31,6 @@ To setup the directoy do the following:
 
 {% endspoiler %}
 
-{% video https://youtu.be/xX7DQGkEG48 %}
-
 This 7ish minute video is the Walkthrough for this assignment. 
 It covers the basics of what you need to know and do to complete it. 
 
