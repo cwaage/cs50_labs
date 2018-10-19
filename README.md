@@ -129,7 +129,7 @@ Modify `mario.c` at right in such a way that it implements this program as descr
 To try out the staff's implementation of this problem, execute by copying and pasting the entire path below into the terminal command line
 
 ```
-~cs50/unit1/mario/less
+~cs50/unit1/mario/more
 ```
 
 {% endspoiler %}
@@ -156,8 +156,8 @@ When you are done coding the above,  `compile` your program with the `make` comm
 ##### DEBUG
 
 You know by now that you will almost certainly experience errors when compiling. 
-Do your best to work through the errors. Read the line numbers repoerted in the errors and go to the code and see what is coded on that line. It's always best to start with the **first** error that is reported. Sometimes fixing the first error fixes ALL of them. 
-Remember to use `help50` as below if the error messages aren't clear to you. 
+Do your best to work through the errors. Read the line numbers reported in the errors and go to the code and see what is coded on that line. It's always best to start with the **first** error that is reported. Sometimes fixing the first error fixes ALL of them. 
+Remember to use `help50` as below if the error messages aren't clear. 
 
 ```csh
 $ help50 make mario
