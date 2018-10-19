@@ -31,7 +31,7 @@ To setup the directoy do the following:
 
 {% endspoiler %}
 
-{% video https://www.youtube.com/watch?v=n1glFqt3g38 %}
+{% video https://youtu.be/xX7DQGkEG48 %}
 
 This 7ish minute video is the Walkthrough for this assignment. 
 It covers the basics of what you need to know and do to complete it. 
@@ -52,7 +52,6 @@ Toward the beginning of World 1-1 in Nintendo's Super Mario Brothers, Mario must
 
 ![screenshot of Mario jumping up a right-aligned pyramid](pyramids.png)
 
-Let's recreate that pyramid in C, albeit in text, using hashes (`#`) for bricks, a la the below. Each hash is a bit taller than it is wide, so the pyramid itself is also be taller than it is wide.
 Let's recreate those pyramids in C, albeit in text, using hashes (`#`) for bricks, a la the below. Each hash is a bit taller than it is wide, so the pyramids themselves are also be taller than they are wide.
 
 ```
@@ -62,7 +61,7 @@ Let's recreate those pyramids in C, albeit in text, using hashes (`#`) for brick
 ####  ####
 ```
 
-The program we'll write will be called `mario`. And let's allow the user to decide just how tall the pyramids should be by first prompting them for a positive integer between, say, 1 and 8, inclusive. 
+The program we'll write will be called `mario`. And let's allow the user to decide just how tall the pyramids should be by first prompting them for a non-negative integer less than 24. 
 
 Here's how the program might work if the user inputs `8` when prompted:
 
@@ -108,12 +107,11 @@ Height: 1
 #  #
 ```
 
-If the user doesn't, in fact, input a positive integer between 1 and 8, inclusive, when prompted, the program should re-prompt the user until they cooperate:
+If the user doesn't, in fact, input an integer between 0 and 23, inclusive, when prompted, the program should re-prompt the user until they cooperate:
 
 ```
 $ ./mario
 Height: -1
-Height: 0
 Height: 42
 Height: 50
 Height: 4
@@ -122,20 +120,17 @@ Height: 4
  ###  ###
 ####  ####
 ```
-
 Notice that width of the "gap" between adjacent pyramids is equal to the width of two hashes, irrespective of the pyramids' heights.
 
 Modify `mario.c` at right in such a way that it implements this program as described!
 
 {% spoiler "Staff's Solution" %}
 
-To try out the staff's own implementation of `mario`, execute
+To try out the staff's implementation of this problem, execute by copying and pasting the entire path below into the terminal command line
 
 ```
-./mario
+~cs50/unit1/mario/less
 ```
-
-within [this sandbox](https://sandbox.cs50.io/060e683a-837c-4bb0-96b2-04319987df17).
 
 {% endspoiler %}
 
@@ -144,9 +139,8 @@ within [this sandbox](https://sandbox.cs50.io/060e683a-837c-4bb0-96b2-04319987df
 Does your code work as prescribed when you input
 
 * `-1` (or other negative numbers)?
-* `0`?
-* `1` through `8`?
-* `9` or other positive numbers?
+* `0` through `23`?
+* `24` or other positive numbers?
 * letters or words?
 * no input at all, when you only hit Enter?
 
