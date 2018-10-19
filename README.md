@@ -190,6 +190,20 @@ Stored: 4
 
 {% endspoiler %}
 
+### Before you proceed, compile and run your code to be sure it accepts only valid user input. 
+
+`compile` your program with the `make` command
+
+```
+  $ make mario
+```
+Run your exectuable file as below
+
+```
+./mario
+```
+
+
 ## Building the Opposite
 
 Now that your program is (hopefully!) accepting input as prescribed, it's time for another step.
