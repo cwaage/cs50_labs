@@ -332,7 +332,7 @@ When your code has compiled without errors there will be a new 'executable' file
 
 **mario**
 
-To run the executable `isbn` file you will type the following at the terminal prompt
+To run the executable `mario` file you will type the following at the terminal prompt
 ````
 $ ./mario
 ````
