@@ -1,1 +1,11 @@
-lab50: true
+lab50:
+  files:
+    - !exclude cash.c
+    - !exclude "README.md"
+    - !include "notes.md"
+
+submit50:
+  files: &files
+    - !exclude "*"
+    - !require cach.c
+  
