@@ -1,6 +1,7 @@
 lab50:
   files:
     - !exclude cash.c
+    - !exclude coins.jpg
     - !exclude "README.md"
     - !include "notes.md"
 
