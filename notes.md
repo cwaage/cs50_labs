@@ -13,4 +13,4 @@ To setup the directoy do the following:
   * open `credit.c` in your IDE code editor window
   * With the Step by Step instructions open next your new window create your code
   * Remember in the IDE you need to save (shortcut: command + s ) your work before you compile it
-  * Code well! 
+  * Be One With The Code
