@@ -101,7 +101,7 @@ If your program behaves incorrectly on some inputs (or doesn't compile at all), 
 To try out the staff’s implementation of this problem, execute by copying and pasting the entire path below (including the tilde ~ into the terminal command line
 
 ```
-~cs50/unit1/cash
+~cs50/unit1/credit 
 ```
 
 {% endspoiler %}
@@ -109,16 +109,14 @@ To try out the staff’s implementation of this problem, execute by copying and 
 {% next %}
 
 #### Compile your program
-When you are done coding the above,  `compile` your program with the `make` command.
-
+Use the `make` command to compile your code.
 ```
   $ make credit 
 ```
 
 ##### DEBUG
 
-You know by now that you will almost certainly experience errors when compiling. 
-Do your best to work through the errors. Read the line numbers reported in the errors and go to the code and see what is coded on that line. 
+Remember to read the line numbers reported in the errors and go to the code and see what is coded on that line. 
 
 It's always best to start with the **first** error that is reported. Sometimes fixing the first error fixes ALL of them. 
 For example if you forgot to declare `int x` but you use `x` in your code you might get a ton of errors that are basically asking `What is "x"!!!! You never declared it!!!`
@@ -132,40 +130,25 @@ $ help50 make credit
 {% next "Running Your Program" %}
 
 #### Run Your Program
-When your code has compiled without errors there will be a new 'executable' file called
 
-**credit**
-
-To run the executable `cash` file you will type the following at the terminal prompt
+To run the executable `credit` file you will type the following at the terminal prompt
 ````
 $ ./credit
 ````
 
 {% next "Check, Style and Submit" %}
 
-#### Check
-You can use the 'check50' command as shown below to check if your syntax and function are correct
-
+#### Check50
 ```
 check50 cs50/2018/ap/credit
 ```
 
-#### Style
-
-Check if you are stylistically correct by usng the 'style50' check below. This does *not* check for
-syntax or other errors. It only checks if your code is inline with expected style requirements (spacing, indentations, etc...).
-
-For Recommended Style Notes visit the following link [CS50 Style Guide](https://cs50.readthedocs.io/style/c/)
-
+#### Style50
 ```
 style50 credit.c
 ```
 
-#### Submit
-
-After you have checked your style and syntax above you are ready to submit your code.
-You can submit your project directly from the command line as shown below.
-
+#### Submit50
 ```
 submit50 cs50/2018/ap/credit
 ```
