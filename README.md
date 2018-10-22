@@ -98,10 +98,12 @@ If your program behaves incorrectly on some inputs (or doesn't compile at all), 
 
 {% spoiler "Staff's Solution" %}
 
-To try out the staff's own implementation of `credit`, execute
+To try out the staff’s implementation of this problem, execute by copying and pasting the entire path below (including the tilde ~ into the terminal command line
+
 ```
-./credit
+~cs50/unit1/cash
 ```
+
 {% endspoiler %}
 
 {% next %}
@@ -124,7 +126,7 @@ For example if you forgot to declare `int x` but you use `x` in your code you mi
 Remember to use `help50` as below ONLY if the error messages aren't clear. 
 
 ```csh
-$ help50 make crecit
+$ help50 make credit
 ```
 
 {% next "Running Your Program" %}
