@@ -72,7 +72,7 @@ That's kind of confusing, so let's work through an example with an actual Visa n
 
    13 + 4 + 0 + 0 + 0 + 0 + 0 + 3 + 0 = 20
    
-   **13** + <span style="color: green">0</span> + <span style="color: green">3</span> + <span style="color: green">0</span> + <span style="color: green">0</span> + <span style="color: green">0</span> + <span style="color: green">0</span> + <span style="color: green">0</span> + <span style="color: green">4</span> = 20
+   **13** + <span style="color: blue">0</span> + <span style="color: green">3</span> + <span style="color: green">0</span> + <span style="color: green">0</span> + <span style="color: green">0</span> + <span style="color: green">0</span> + <span style="color: green">0</span> + <span style="color: green">4</span> = 20
 
 1. Yup, the last digit in that sum (20) is a 0, so that card is indeed legit!
 
