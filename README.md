@@ -57,13 +57,26 @@ Implement, in `cash.c` in the IDE, a program that first asks the user how much c
 * So that we can automate some tests of your code, be sure that your program's last line of output is only the minimum number of coins possible: an integer followed by `\n`.
 * Beware the inherent imprecision of floating-point values. Go to the sandbox and run [floats.c](https://sandbox.cs50.io/575cd269-8b4e-4a01-bc9f-3de38614b43e)  In floats.c's code if `x` is `2`, and `y` is `10`, `x / y` is not precisely two tenths! And so, before making change, you'll probably want to convert the user's inputted dollars to cents (i.e., from a `float` to an `int`) to avoid tiny errors that might otherwise add up! 
 * Take care to round your cents to the nearest penny, as with `round`, which is declared in `math.h`. 
-* See the round documentation at the following link[round](https://reference.cs50.net/math/round)
+* See the round documentation at the following link [round](https://reference.cs50.net/math/round)
+
+{% spoiler Round Function Example %}
+
+The round fuction returns the nearest integer value.
+So, if you use the `round()` function as below by entering the value `4.7`
+```
+round(4.7)
+```
+The function returns the value `5.00`
+
+{% endspoiler %}
 
 For instance, if `dollars` is a `float` with the user's input (e.g., `0.20`), then code like
 
   ```
   int coins = round(dollars * 100);
   ```
+
+
 
   will safely convert `0.20` (or even `0.200000002980232238769531250`) to `20`.
 
