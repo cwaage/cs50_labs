@@ -62,23 +62,19 @@ Implement, in `cash.c` in the IDE, a program that first asks the user how much c
 {% spoiler Round Function Example %}
 
 The round fuction returns the nearest integer value.
-So, if you use the `round()` function as below by entering the value `4.7`
+So, if you use`round()` as below by entering the input value `4.7`
 ```
 round(4.7)
 ```
-The function returns the value `5.00`
+The function returns `5.00`
 
 {% endspoiler %}
 
-For instance, if `dollars` is a `float` with the user's input (e.g., `0.20`), then code like
-
+For instance in your program, if `dollars` is a `float` with the user's input (e.g., `0.20`), then code like the following
   ```
   int coins = round(dollars * 100);
   ```
-
-
-
-  will safely convert `0.20` (or even `0.200000002980232238769531250`) to `20`.
+will safely convert `0.20` (or even `0.200000002980232238769531250`) to `20`.
 
 Your program should behave per the examples below.
 
