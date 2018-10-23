@@ -6,7 +6,7 @@ In the IDE environment you will create your code and run it in the directory wit
 To setup the directoy do the following:
 
   * Open another browser window (shortcut command + n)
-  * Navigate to [https://cs50.io](https://cs50.io) and login
+  * Navigate to https://cs50.io and login
   * cd to `unit1`
   * `mkdir credit` and then cd into `credit`
   * create a new file called `credit.c` located in the `credit` directory
