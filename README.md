@@ -60,7 +60,7 @@ That's kind of confusing, so let's work through an example with an actual Visa n
    
    Now let's add those products' **digits** (i.e., **not** the products themselves) together:
 
-   8 + 0 + 1 + 2 + 0 + 0 + 0 + 0 + 2 = **13** (Notice we didn't at 12 from above, but 1 + 2)
+   8 + 0 + 1 + 2 + 0 + 0 + 0 + 0 + 2 = **13** (Notice we didn't add 12 from above, but 1 + 2)
 
 1. Now let's add that sum (**13**) to the sum of the digits that weren't multiplied by 2 (the numbers highlighted in <span style="color: blue">blue</span>):
 
@@ -74,12 +74,11 @@ So, validating credit card numbers isn't hard, but it does get a bit tedious by 
 
 ## Implementation Details 
 
-In `credit.c` in your IDE, write a program that prompts the user for a credit card number and then reports (via `printf`) whether it is a valid American Express, MasterCard, or Visa card number, per the definitions of each's format herein. So that we can automate some tests of your code, we ask that your program's last line of output be:
+In `credit.c` in your IDE, write a program that prompts the user for a credit card number and then reports (via `printf`) whether it is a valid American Express, MasterCard, or Visa card number, per the definitions of each's format herein. So that we can automate some tests of your code, we ask that your program's last line of output be only one of the following:
 
    * `AMEX\n`
    * `MASTERCARD\n`
    * `VISA\n` 
-or  ...
    * `INVALID\n`
 
 ...nothing more, nothing less. 
