@@ -47,6 +47,10 @@ So what's the secret formula?  Well, most cards use an algorithm invented by Han
 That's kind of confusing, so let's work through an example with an actual Visa number: 4003600000000014.
 
 1. For the sake of discussion, let's first underline every other digit, **starting with the number's second-to-last digit**:
+
+<span style="color: red">0-789-75198-4</span>
+   
+   <span style="color: red">4</span>0<span style="color: red">0</span>3<span style="color: red">6</span>0<span style="color: red">0</span>0<span style="color: red">0</span>0<span style="color: red">0</span>0<span style="color: red">0</span>0<span style="color: red">1</span>4
    
    <u>4</u>0<u>0</u>3<u>6</u>0<u>0</u>0<u>0</u>0<u>0</u>0<u>0</u>0<u>1</u>4
 
