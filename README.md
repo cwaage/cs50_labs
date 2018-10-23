@@ -66,9 +66,13 @@ That's kind of confusing, so let's work through an example with an actual Visa n
 
    2 + 0 + 0 + 0 + 0 + 1 + 2 + 0 + 8 = 13 (Notice we didn't at 12 from above, but 1 + 2)
 
-1. Now let's add that sum (13) to the sum of the digits that weren't multiplied by 2 (starting from the end):
+1. Now let's add that sum (**13**) to the sum of the digits that weren't multiplied by 2 (the numbers highlighted in green):
+
+   4<span style="color: green">0</span>0<span style="color: green">3</span>6<span style="color: green">0</span>0<span style="color: green">0</span>0<span style="color: green">0</span>0<span style="color: green">0</span>0<span style="color: green">0</span>1<span style="color: green">4</span>
 
    13 + 4 + 0 + 0 + 0 + 0 + 0 + 3 + 0 = 20
+   
+   **13** + <span style="color: green">0</span> + <span style="color: green">3</span> + <span style="color: green">0</span> + <span style="color: green">0</span> + <span style="color: green">0</span> + <span style="color: green">0</span> + <span style="color: green">0</span> + <span style="color: green">4</span> = 20
 
 1. Yup, the last digit in that sum (20) is a 0, so that card is indeed legit!
 
