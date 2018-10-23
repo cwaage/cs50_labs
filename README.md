@@ -54,21 +54,17 @@ That's kind of confusing, so let's work through an example with an actual Visa n
    
    <span style="color: red">4</span>•2 + <span style="color: red">0</span>•2 + <span style="color: red">6</span>•2 + <span style="color: red">0</span>•2 + <span style="color: red">0</span>•2 + <span style="color: red">0</span>•2 + <span style="color: red">0</span>•2 + <span style="color: red">1</span>•2
 
-   1•2 + 0•2 + 0•2 + 0•2 + 0•2 + 6•2 + 0•2 + 4•2
-
    That gives us:
+   
+   8 + 0 + 12 + 0 + 0 + 0 + 0 + 2
+   
+   Now let's add those products' **digits** (i.e., **not** the products themselves) together:
 
-   2 + 0 + 0 + 0 + 0 + 12 + 0 + 8
-
-   Now let's add those products' **digits** (i.e., not the products themselves) together:
-
-   2 + 0 + 0 + 0 + 0 + 1 + 2 + 0 + 8 = 13 (Notice we didn't at 12 from above, but 1 + 2)
+   8 + 0 + 1 + 2 + 0 + 0 + 0 + 0 + 2 = **13** (Notice we didn't at 12 from above, but 1 + 2)
 
 1. Now let's add that sum (**13**) to the sum of the digits that weren't multiplied by 2 (the numbers highlighted in <span style="color: blue">blue</span>):
 
    4<span style="color: blue">0</span>0<span style="color: blue">3</span>6<span style="color: blue">0</span>0<span style="color: blue">0</span>0<span style="color: blue">0</span>0<span style="color: blue">0</span>0<span style="color: blue">0</span>1<span style="color: blue">4</span>
-
-   13 + 4 + 0 + 0 + 0 + 0 + 0 + 3 + 0 = 20
    
    **13** + <span style="color: blue">0</span> + <span style="color: blue">3</span> + <span style="color: blue">0</span> + <span style="color: blue">0</span> + <span style="color: blue">0</span> + <span style="color: blue">0</span> + <span style="color: blue">0</span> + <span style="color: blue">4</span> = 20
 
