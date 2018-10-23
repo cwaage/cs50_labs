@@ -110,7 +110,10 @@ Number: 6176292929
 INVALID
 ```
 
-Test out your program with a whole bunch of inputs, both valid and invalid. (We certainly will!) Here are a [few card numbers](https://developer.paypal.com/docs/classic/payflow/payflow-pro/payflow-pro-testing/#credit-card-numbers-for-testing) that PayPal recommends for testing.
+Test out your program with a whole bunch of inputs, both valid and invalid. Here are a [few card numbers](https://developer.paypal.com/docs/classic/payflow/payflow-pro/payflow-pro-testing/#credit-card-numbers-for-testing) that PayPal recommends for testing.
+
+** Note ** There are a few Mastercard numbers listed at the link above that start with 22 like the following: 2221000000000009
+With the algorithm described above, those numbers should be found to be `INVALID` by your program as they do not start with 51, 52, 53, 54, or 55. 
 
 If your program behaves incorrectly on some inputs (or doesn't compile at all), time to debug!
 
@@ -139,7 +142,7 @@ Remember to read the line numbers reported in the errors and go to the code and 
 It's always best to start with the **first** error that is reported. Sometimes fixing the first error fixes ALL of them. 
 For example if you forgot to declare `int x` but you use `x` in your code you might get a ton of errors that are basically asking `What is "x"!!!! You never declared it!!!`
 
-Remember to use `help50` as below ONLY if the error messages aren't clear. 
+Remember to use `help50` as below IF the error messages aren't clear. 
 
 ```csh
 $ help50 make credit
