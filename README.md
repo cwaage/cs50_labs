@@ -1,15 +1,19 @@
 # cs50_labs
 
-## Instructions: Designing a webpage 
+## Designing a Webpage from Scratch
 ### HTML
-### CSS
 
-# Video on HTML
+#### HTML: The Structure of of your web page. 
 
-# Video on CSS
+You will learn how to use HTML Tags to structure you page format basic text, and links.
+You are given the a basic framework for a web page
 
-# Provide a Basic Structure For Web Page
+#### Video on HTML
 
-# Check50
+### CSS: Adding Style to your webpage 
 
-# Submit50 
+
+
+#### Video on CSS
+
+
