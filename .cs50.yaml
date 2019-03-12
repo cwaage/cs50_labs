@@ -1,7 +1,11 @@
-lab50:
+lab50: true
+
   files:
     - !include index.html
     - !exclude "README.md"
+ 
+ window:
+    - browser
 
   submit50:
     files: &files
