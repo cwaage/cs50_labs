@@ -5,10 +5,10 @@ lab50:
     - terminal
     - browser
   files:
-    - !include index.html
+    - !include myPage.html
     - !exclude "README.md"
  
   submit50:
     files: &files
       - !exclude "*"
-      - !require index.html
+      - !require myPage.html
