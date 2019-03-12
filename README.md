@@ -19,14 +19,11 @@ You are given the a basic framework for a web page
 [HTML Tag Reference](https://www.w3schools.com/tags/default.asp)
 
 #### HTML Video Short
-<iframe src="https://www.youtube.com/watch?time_continue=301&v=dM5V1epAbSs"></iframe>
+{% video https://www.youtube.com/watch?time_continue=301&v=dM5V1epAbSs %}
 
-
-
-#### Video on HTML
+{% next Style: CSS %}
 
 ### CSS: Adding Style to your webpage 
-
 
 
 #### Video on CSS
