@@ -4,7 +4,7 @@
 
 ### Goal
 
-Today's goal is to learn train yourself a bit on HTML and CSS. You have the period to watch the videos, look at the reference material and tinker with the HTML and CSS code.
+Today's goal is to learn train / yourself a bit on HTML and CSS. You have the period to watch the videos, look at the reference material and tinker with the HTML and CSS code.
 
 Work to create a simple website that contains information regarding a subject you care about. 
 
