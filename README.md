@@ -1,3 +1,15 @@
 # cs50_labs
 
-Test For CS50 Labs
+## Instructions: Designing a webpage 
+### HTML
+### CSS
+
+# Video on HTML
+
+# Video on CSS
+
+# Provide a Basic Structure For Web Page
+
+# Check50
+
+# Submit50 
