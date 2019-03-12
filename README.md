@@ -17,14 +17,11 @@ You are given the a basic framework for a web page in the starter code.
 
 With the starter code prvided in mypage.html experiment by adding your own HTML tags and elements. 
 
-Start slowly and take a look at the links below for headings, paragraphs, and links.
-Try adding a few to the web page and then view your changes.
+Start slowly and take a look at the link below and try out for headings, paragraphs, links, and lists on W3Schools.
+Add those to your site and then view the changes. 
 
-#### Basic Tags To Start With 
-
-* [headings](https://www.w3schools.com/tags/tag_hn.asp)
-* [paragraph](https://www.w3schools.com/tags/tag_p.asp)
-* [links](https://www.w3schools.com/tags/tag_a.asp)
+#### TAGs
+* [HTML tag basics](https://www.w3schools.com/hTml/html_basic.asp)
 
 {% spoiler "Directions to view web page" %}
 
