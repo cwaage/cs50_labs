@@ -20,7 +20,7 @@ With the starter code prvided in mypage.html experiment by adding your own HTML 
 Start slowly and take a look at the link below and try out for headings, paragraphs, links, and lists on W3Schools.
 Add those to your site and then view the changes. 
 
-#### TAGs
+#### Tags
 * [HTML tag basics](https://www.w3schools.com/hTml/html_basic.asp)
 
 {% spoiler "Directions to view web page" %}
@@ -61,11 +61,24 @@ Start your exploration into CSS by watching the video below (7:54).
 * [CSS Tutorial](https://www.w3schools.com/css/)
 * [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.asp)
 
+After you have spent some time familiarizing yourself with HTML and CSS work to create a web page
+that contains a minimum of the following:
 
+* 2 headings 
+* 2 paragraphs 
+* 1 link
+* 1 list (ordered or unordered)
+* 1 div
+* 1 externally linked image
+* 1 button
+* font that is a different color
 
 ### Turn in what you have done today
 
-Regardless of how far you got today, I would like to see what you have done. Submit what you have using the submit50 code below. 
+Regardless of how far you got today, I would like to see what you have done. 
+Submit what you have using the submit50 code below. 
+
+There is no check50 for this assignment 
 
 #### Submit50
 
