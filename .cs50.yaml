@@ -1,8 +1,4 @@
 lab50: true
- 
-  window:
-    - browser
-
   files:
     - !include index.html
     - !exclude "README.md"
