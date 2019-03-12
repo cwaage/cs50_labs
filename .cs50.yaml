@@ -3,11 +3,9 @@ lab50:
     - editor
     - readme
     - terminal
-    - browser
   files:
     - !include myPage.html
     - !exclude "README.md"
- 
   submit50:
     files: &files
       - !exclude "*"
