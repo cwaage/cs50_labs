@@ -6,17 +6,20 @@
 #### HTML: The Structure of of your web page. 
 
 You will learn how to use HTML Tags to structure you page format basic text, and links.
-You are given the a basic framework for a web page
+You are given the a basic framework for a web page.
+
+Start slow and take a look at the links below for headings, paragraphs, and links.
+Try adding a few to the web page and then view your changes.
 
 #### Basic Tags To Start With 
 
-[headings](https://www.w3schools.com/tags/tag_hn.asp)
-[paragraph](https://www.w3schools.com/tags/tag_p.asp)
-[links](https://www.w3schools.com/tags/tag_a.asp)
+* [headings](https://www.w3schools.com/tags/tag_hn.asp)
+* [paragraph](https://www.w3schools.com/tags/tag_p.asp)
+* [links](https://www.w3schools.com/tags/tag_a.asp)
 
 #### Tutorial on W3Schools.com
-[HTML Tutorial](https://www.w3schools.com/html/)
-[HTML Tag Reference](https://www.w3schools.com/tags/default.asp)
+* [HTML Tutorial](https://www.w3schools.com/html/)
+* [HTML Tag Reference](https://www.w3schools.com/tags/default.asp)
 
 #### HTML Video Short
 {% video https://www.youtube.com/watch?time_continue=301&v=dM5V1epAbSs %}
