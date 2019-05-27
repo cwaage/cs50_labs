@@ -1,15 +1,17 @@
-# AP CSP: cs50_labs
+# Python Strings Exercises
 
 ## Mini Lab
 ### Formatted Printing and Operators 
 
-This mini lab is designed to give you hands on practice with printf() and math operators.
+This lab is designed to give you practice with the following
 
-Use this Guide and the TODO notes in the code's comments to complete the tasks in each section. 
+* String Formating
+* String Slicing
+* Iterating (Looping through a string)
 
-Compile and run after each section to check if your code is working correctly.
+**Iteration 1**
 
-There is no `check50` for this assignment, but you can run `help50` when you compile your program:
+Create a Python Program that accepts ...
 
 ```
 $ help50 make unit1_practice_lab_0
